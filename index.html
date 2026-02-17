@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube Producer — Tools for YouTube Creators</title>
   <meta name="description" content="Free tools for YouTube creators. Generate podcast titles, create quote carousels, and more.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -170,18 +173,51 @@
     /* Footer */
     footer {
       text-align: center;
-      padding: 40px 0;
+      padding: 48px 0;
       border-top: 1px solid var(--border);
       color: var(--text-secondary);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-built-by {
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
     footer a {
       color: var(--text-secondary);
       text-decoration: none;
+      transition: color 0.15s ease;
     }
 
     footer a:hover {
+      color: var(--text);
+    }
+
+    .footer-cta {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .footer-cta:hover {
+      color: var(--accent);
+    }
+
+    .footer-tip {
+      color: var(--text-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .footer-tip:hover {
       color: var(--text);
     }
 
@@ -232,7 +268,23 @@
 
   <footer>
     <div class="container">
-      Built by <a href="https://beckyisj.substack.com" target="_blank">@beckyisj</a>
+      <p class="footer-built-by">Built by <a href="https://beckyisj.substack.com" target="_blank"><strong>Becky Isjwara</strong></a></p>
+      <div class="footer-links">
+        <a href="https://beckyisj.substack.com" target="_blank">Substack</a>
+        <a href="https://www.linkedin.com/in/beckyisj/" target="_blank">LinkedIn</a>
+        <a href="https://go.beckyisj.com/workwithme" target="_blank" class="footer-cta">Work with me</a>
+        <a href="https://go.beckyisj.com/30min" target="_blank" class="footer-cta">Book a call</a>
+        <a href="https://checkout.beckyisj.com/b/fZu28rbL49uNasD1tReAg00" target="_blank" class="footer-tip">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+            <line x1="6" y1="1" x2="6" y2="4" />
+            <line x1="10" y1="1" x2="10" y2="4" />
+            <line x1="14" y1="1" x2="14" y2="4" />
+          </svg>
+          Tip jar
+        </a>
+      </div>
     </div>
   </footer>
 </body>
