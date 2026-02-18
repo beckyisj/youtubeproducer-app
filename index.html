@@ -10,23 +10,26 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0a0a0a;
-      --surface: #141414;
-      --surface-hover: #1a1a1a;
-      --border: #222;
-      --text: #fafafa;
-      --text-secondary: #888;
-      --accent: #ff4444;
-      --accent-soft: rgba(255, 68, 68, 0.1);
+      --bg:            #fafaf9;
+      --bg-surface:    #ffffff;
+      --bg-subtle:     #f5f5f4;
+      --border:        #e7e5e4;
+      --border-hover:  #d6d3d1;
+      --text:          #1c1917;
+      --text-secondary:#78716c;
+      --text-muted:    #a8a29e;
+      --accent:        #0d9488;
+      --accent-hover:  #0f766e;
+      --accent-soft:   rgba(13, 148, 136, 0.08);
     }
 
     body {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Manrope', -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
@@ -40,6 +43,10 @@
     }
 
     /* Header */
+    .hero {
+      background: linear-gradient(180deg, rgba(13, 148, 136, 0.06) 0%, transparent 100%);
+    }
+
     header {
       padding: 80px 0 60px;
       text-align: center;
@@ -55,7 +62,7 @@
     .logo-icon {
       width: 40px;
       height: 40px;
-      background: var(--accent);
+      background: linear-gradient(135deg, #0d9488, #14b8a6);
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -91,20 +98,38 @@
     }
 
     .tool-card {
-      background: var(--surface);
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 12px;
       padding: 32px;
       text-decoration: none;
       color: var(--text);
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
       display: block;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+      opacity: 0;
+      transition: opacity 0.15s ease;
     }
 
     .tool-card:hover {
-      background: var(--surface-hover);
-      border-color: #333;
-      transform: translateY(-2px);
+      border-color: var(--border-hover);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .tool-card:hover::before {
+      opacity: 1;
     }
 
     .tool-header {
@@ -125,13 +150,13 @@
     }
 
     .badge-live {
-      background: rgba(52, 199, 89, 0.15);
-      color: #34c759;
+      background: var(--accent-soft);
+      color: var(--accent);
     }
 
     .badge-soon {
-      background: rgba(255, 204, 0, 0.15);
-      color: #ffcc00;
+      background: rgba(217, 119, 6, 0.08);
+      color: #b45309;
     }
 
     .tool-name {
@@ -149,25 +174,29 @@
     .tool-arrow {
       display: inline-block;
       margin-left: 6px;
-      transition: transform 0.2s ease;
-      color: var(--text-secondary);
+      transition: all 0.15s ease;
+      color: var(--text-muted);
     }
 
     .tool-card:hover .tool-arrow {
       transform: translateX(4px);
-      color: var(--text);
+      color: var(--accent);
     }
 
     /* Coming soon state */
     .tool-card.coming-soon {
-      opacity: 0.6;
+      opacity: 0.5;
       cursor: default;
+    }
+
+    .tool-card.coming-soon::before {
+      display: none;
     }
 
     .tool-card.coming-soon:hover {
       transform: none;
-      background: var(--surface);
       border-color: var(--border);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
     }
 
     /* Footer */
@@ -184,6 +213,15 @@
       line-height: 1.6;
     }
 
+    .footer-built-by a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .footer-built-by a:hover {
+      color: var(--accent);
+    }
+
     .footer-links {
       display: flex;
       justify-content: center;
@@ -192,7 +230,7 @@
     }
 
     footer a {
-      color: var(--text-secondary);
+      color: var(--text-muted);
       text-decoration: none;
       transition: color 0.15s ease;
     }
@@ -202,7 +240,7 @@
     }
 
     .footer-cta {
-      color: var(--text);
+      color: var(--text-secondary);
       font-weight: 500;
     }
 
@@ -211,7 +249,7 @@
     }
 
     .footer-tip {
-      color: var(--text-secondary);
+      color: var(--text-muted);
       display: inline-flex;
       align-items: center;
       gap: 5px;
@@ -231,17 +269,21 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+  <div class="hero">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
         </div>
-      </div>
-      <h1>YouTube Producer</h1>
-      <p class="tagline">Free tools to help you title, package, and promote your YouTube videos.</p>
-    </header>
+        <h1>YouTube Producer</h1>
+        <p class="tagline">Free tools to help you title, package, and promote your YouTube videos.</p>
+      </header>
+    </div>
+  </div>
 
+  <div class="container">
     <div class="tools">
       <a href="https://packager.youtubeproducer.app" class="tool-card">
         <div class="tool-header">
