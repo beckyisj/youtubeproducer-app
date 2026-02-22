@@ -37,7 +37,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -93,6 +93,7 @@
     /* Tools Grid */
     .tools {
       display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       padding-bottom: 100px;
     }
@@ -137,6 +138,14 @@
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 12px;
+      min-height: 56px;
+    }
+
+    .tool-video {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
     }
 
     .tool-badge {
@@ -259,12 +268,17 @@
       color: var(--text);
     }
 
+    @media (max-width: 900px) {
+      .tools { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+    }
+
     @media (max-width: 600px) {
       header { padding: 60px 0 40px; }
       h1 { font-size: 1.8rem; }
       .tagline { font-size: 1rem; }
       .tool-card { padding: 24px; }
       .tool-name { font-size: 1.15rem; }
+      .tool-video { border-radius: 6px; }
     }
   </style>
 </head>
@@ -290,6 +304,9 @@
           <div class="tool-name">Podcast Packager</div>
           <span class="tool-badge badge-live">Live</span>
         </div>
+        <video class="tool-video" autoplay loop muted playsinline>
+          <source src="/demo-podcast-packager.mp4" type="video/mp4">
+        </video>
         <p class="tool-description">
           Paste your podcast transcript and get 10 title options, 6 thumbnail texts, and 3 descriptions — powered by AI and trained on top-performing creator videos.
           <span class="tool-arrow">→</span>
@@ -301,21 +318,28 @@
           <div class="tool-name">YouTube Popular This Year</div>
           <span class="tool-badge badge-live">Live</span>
         </div>
+        <video class="tool-video" autoplay loop muted playsinline>
+          <source src="/demo-popular-this-year.mp4" type="video/mp4">
+        </video>
         <p class="tool-description">
           A Chrome extension that adds a "Popular This Year" filter to any YouTube channel page — see their most-viewed videos from the past 12 months, sorted by view count.
           <span class="tool-arrow">→</span>
         </p>
       </a>
 
-      <div class="tool-card coming-soon">
+      <a href="https://carousel.youtubeproducer.app" class="tool-card">
         <div class="tool-header">
           <div class="tool-name">Quote Carousel Generator</div>
-          <span class="tool-badge badge-soon">Coming Soon</span>
+          <span class="tool-badge badge-live">Live</span>
         </div>
+        <video class="tool-video" autoplay loop muted playsinline>
+          <source src="/demo-carousel.mp4" type="video/mp4">
+        </video>
         <p class="tool-description">
-          Paste a YouTube URL, pick the best quotes, and generate ready-to-post carousel slides with video frames and text overlays.
+          Paste a YouTube transcript, pick the best quotes, pair them with video frames, and export ready-to-post Instagram carousel slides.
+          <span class="tool-arrow">→</span>
         </p>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -327,6 +351,7 @@
         <a href="https://www.linkedin.com/in/beckyisj/" target="_blank">LinkedIn</a>
         <a href="https://go.beckyisj.com/workwithme" target="_blank" class="footer-cta">Work with me</a>
         <a href="https://go.beckyisj.com/30min" target="_blank" class="footer-cta">Book a call</a>
+        <a href="/privacy.html">Privacy Policy</a>
         <a href="https://checkout.beckyisj.com/b/fZu28rbL49uNasD1tReAg00" target="_blank" class="footer-tip">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
