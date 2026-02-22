@@ -1,0 +1,53 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafaf9"/>
+      <stop offset="100%" stop-color="#f0efed"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="topBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+
+  <!-- Top accent bar (at crop boundary: y=285) -->
+  <rect y="285" width="1200" height="5" fill="url(#topBar)"/>
+
+  <!-- Subtle teal glow -->
+  <ellipse cx="600" cy="285" rx="500" ry="250" fill="rgba(13, 148, 136, 0.04)"/>
+
+  <!-- Content centered in y=285..915 (630px crop zone) -->
+
+  <!-- Logo icon + text inline -->
+  <rect x="440" y="380" width="52" height="52" rx="13" fill="url(#teal)"/>
+  <path d="M456 396 L456 416 L472 406 Z" fill="white"/>
+  <text x="506" y="418" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="30" font-weight="600" fill="#1c1917" letter-spacing="-0.5">YouTube Producer</text>
+
+  <!-- Main title -->
+  <text x="600" y="520" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="46" font-weight="700" fill="#1c1917" letter-spacing="-1.5">The Producer's Toolkit</text>
+  <text x="600" y="575" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="46" font-weight="700" fill="#1c1917" letter-spacing="-1.5">for YouTube</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="635" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="22" fill="#78716c">Built for producers, editors, and solo creators.</text>
+
+  <!-- Three tool pills -->
+  <rect x="180" y="690" width="240" height="44" rx="22" fill="rgba(13, 148, 136, 0.08)" stroke="#0d9488" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="300" y="718" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="16" font-weight="500" fill="#0d9488">Podcast Packager</text>
+
+  <rect x="480" y="690" width="240" height="44" rx="22" fill="rgba(13, 148, 136, 0.08)" stroke="#0d9488" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="600" y="718" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="16" font-weight="500" fill="#0d9488">Popular This Year</text>
+
+  <rect x="780" y="690" width="240" height="44" rx="22" fill="rgba(13, 148, 136, 0.08)" stroke="#0d9488" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="900" y="718" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="16" font-weight="500" fill="#0d9488">Quote Carousel</text>
+
+  <!-- Domain -->
+  <text x="600" y="810" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="18" fill="#a8a29e">youtubeproducer.app</text>
+</svg>
