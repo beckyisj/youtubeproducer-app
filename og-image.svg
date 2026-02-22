@@ -28,7 +28,7 @@
 
   <!-- Logo icon + text inline -->
   <rect x="440" y="380" width="52" height="52" rx="13" fill="url(#teal)"/>
-  <path d="M456 396 L456 416 L472 406 Z" fill="white"/>
+  <path d="M461 395 L461 417 L479 406 Z" fill="white"/>
   <text x="506" y="418" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="30" font-weight="600" fill="#1c1917" letter-spacing="-0.5">YouTube Producer</text>
 
   <!-- Main title -->
