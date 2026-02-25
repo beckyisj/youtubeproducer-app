@@ -130,6 +130,14 @@
       max-width: calc(33.333% - 11px);
     }
 
+    /* 5 cards: first 3 in 3-col row, last 2 in 2-col row */
+    .tools .tool-card:first-child:nth-last-child(5),
+    .tools .tool-card:first-child:nth-last-child(5) ~ .tool-card:nth-child(2),
+    .tools .tool-card:first-child:nth-last-child(5) ~ .tool-card:nth-child(3) {
+      flex: 0 1 calc(33.333% - 11px);
+      max-width: calc(33.333% - 11px);
+    }
+
     .tool-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
@@ -229,7 +237,7 @@
 
     /* Coming soon state */
     .tool-card.coming-soon {
-      opacity: 0.5;
+      opacity: 0.65;
       cursor: default;
     }
 
@@ -241,6 +249,23 @@
       transform: none;
       border-color: var(--border);
       box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    .tool-icon-placeholder {
+      width: 100%;
+      height: 280px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+      background: var(--bg-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tool-icon-placeholder svg {
+      width: 120px;
+      height: 120px;
     }
 
     /* Footer */
@@ -307,6 +332,8 @@
       .tools .tool-card,
       .tools .tool-card:first-child:nth-last-child(3),
       .tools .tool-card:first-child:nth-last-child(3) ~ .tool-card,
+      .tools .tool-card:first-child:nth-last-child(5),
+      .tools .tool-card:first-child:nth-last-child(5) ~ .tool-card,
       .tools .tool-card:first-child:nth-last-child(6),
       .tools .tool-card:first-child:nth-last-child(6) ~ .tool-card {
         flex: 0 1 100%;
@@ -393,18 +420,29 @@
         </p>
       </a>
 
-      <a href="https://audit.youtubeproducer.app" class="tool-card">
+      <div class="tool-card coming-soon">
         <div class="tool-header">
           <div class="tool-name">Channel Audit</div>
+          <span class="tool-badge badge-soon">Coming Soon</span>
         </div>
-        <video class="tool-video" autoplay loop muted playsinline>
-          <source src="/demo-channel-audit.mp4" type="video/mp4">
-        </video>
+        <div class="tool-icon-placeholder">
+          <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="audit-bg" x1="0" y1="0" x2="512" y2="512">
+                <stop offset="0%" stop-color="#0d9488"/>
+                <stop offset="100%" stop-color="#0f766e"/>
+              </linearGradient>
+            </defs>
+            <rect width="512" height="512" rx="96" fill="url(#audit-bg)"/>
+            <rect x="112" y="280" width="64" height="120" rx="8" fill="white"/>
+            <rect x="224" y="200" width="64" height="200" rx="8" fill="white"/>
+            <rect x="336" y="120" width="64" height="280" rx="8" fill="white"/>
+          </svg>
+        </div>
         <p class="tool-description">
           Paste any YouTube channel and get a full data-backed analysis. Performance tiers, title patterns, duration sweet spots, and AI recommendations.
-          <span class="tool-arrow">→</span>
         </p>
-      </a>
+      </div>
     </div>
   </div>
 
