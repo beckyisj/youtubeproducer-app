@@ -337,17 +337,25 @@
       .tools .tool-card:first-child:nth-last-child(6),
       .tools .tool-card:first-child:nth-last-child(6) ~ .tool-card {
         flex: 0 1 100%;
-        max-width: 500px;
+        max-width: 100%;
       }
     }
 
     @media (max-width: 600px) {
-      header { padding: 60px 0 40px; }
-      h1 { font-size: 1.8rem; }
-      .tagline { font-size: 1rem; }
-      .tool-card { padding: 24px; }
-      .tool-name { font-size: 1.15rem; }
-      .tool-video { border-radius: 6px; }
+      .container { padding: 0 16px; }
+      header { padding: 48px 0 32px; }
+      h1 { font-size: 1.75rem; }
+      .tagline { font-size: 0.95rem; }
+      .tools { padding-bottom: 60px; gap: 12px; }
+      .tool-card { padding: 20px; }
+      .tool-header { min-height: unset; margin-bottom: 10px; }
+      .tool-name { font-size: 1.1rem; }
+      .tool-description { font-size: 0.9rem; }
+      .tool-video { border-radius: 6px; margin-bottom: 12px; }
+      .tool-icon-placeholder { margin-bottom: 12px; }
+      .tool-icon-placeholder svg { width: 80px; height: 80px; }
+      footer { padding: 32px 0; }
+      .footer-links { gap: 12px 20px; }
     }
   </style>
 </head>
@@ -441,6 +449,38 @@
         </div>
         <p class="tool-description">
           Paste any YouTube channel and get a full data-backed analysis. Performance tiers, title patterns, duration sweet spots, and AI recommendations.
+        </p>
+      </div>
+
+      <div class="tool-card coming-soon">
+        <div class="tool-header">
+          <div class="tool-name">Thumbnail Generator</div>
+          <span class="tool-badge badge-soon">Coming Soon</span>
+        </div>
+        <div class="tool-icon-placeholder">
+          <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="thumb-bg" x1="0" y1="0" x2="512" y2="512">
+                <stop offset="0%" stop-color="#0d9488"/>
+                <stop offset="100%" stop-color="#0f766e"/>
+              </linearGradient>
+            </defs>
+            <rect width="512" height="512" rx="96" fill="url(#thumb-bg)"/>
+            <!-- Thumbnail frame -->
+            <rect x="96" y="144" width="320" height="180" rx="16" fill="white"/>
+            <!-- Mountain/landscape inside -->
+            <path d="M96 280 L200 220 L260 260 L340 180 L416 280 L416 308 C416 316.837 408.837 324 400 324 L112 324 C103.163 324 96 316.837 96 308 Z" fill="#e7e5e4"/>
+            <!-- Sun -->
+            <circle cx="340" cy="200" r="24" fill="#e7e5e4" opacity="0.6"/>
+            <!-- Grid dots below -->
+            <circle cx="176" cy="376" r="8" fill="white"/>
+            <circle cx="224" cy="376" r="8" fill="white"/>
+            <circle cx="272" cy="376" r="8" fill="white"/>
+            <circle cx="320" cy="376" r="8" fill="white"/>
+          </svg>
+        </div>
+        <p class="tool-description">
+          Analyze any channel's thumbnail style, then generate 10+ thumbnail concepts across 7 categories. Text, infographic, flatlay, before/after, and more.
         </p>
       </div>
     </div>
