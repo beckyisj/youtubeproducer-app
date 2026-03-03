@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Read Your Channel Audit (and What to Fix First) — YouTube Producer</title>
+  <meta name="description" content="Channel Audit is basically the tool I wish someone handed me when I first started digging into YouTube channels. It takes your data, crunches it, and points...">
+  <meta property="og:title" content="How to Read Your Channel Audit (and What to Fix First) — YouTube Producer">
+  <meta property="og:description" content="Channel Audit is basically the tool I wish someone handed me when I first started digging into YouTube channels. It takes your data, crunches it, and points...">
+  <meta property="og:url" content="https://youtubeproducer.app/articles/read-channel-audit">
+  <meta property="og:image" content="https://youtubeproducer.app/og-image.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Read Your Channel Audit (and What to Fix First) — YouTube Producer">
+  <meta name="twitter:description" content="Channel Audit is basically the tool I wish someone handed me when I first started digging into YouTube channels. It takes your data, crunches it, and points...">
+  <meta name="twitter:image" content="https://youtubeproducer.app/og-image.png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75ZD55B9SQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-75ZD55B9SQ');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #fafaf9;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f5f5f4;
+      --border: #e7e5e4;
+      --text: #1c1917;
+      --text-secondary: #78716c;
+      --text-muted: #a8a29e;
+      --accent: #0d9488;
+      --accent-hover: #0f766e;
+    }
+    body {
+      font-family: 'Manrope', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px 80px; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 0.9rem; color: var(--text-secondary); text-decoration: none; }
+    .back:hover { color: var(--accent); }
+    .article-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+    }
+    .badge-data { background: rgba(124, 58, 237, 0.08); color: #7c3aed; }
+    .badge-guide { background: rgba(13, 148, 136, 0.08); color: #0d9488; }
+    .article-title { font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; line-height: 1.2; }
+    .article-meta { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 40px; }
+    .article-content h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 14px; color: var(--text); }
+    .article-content h3 { font-size: 1.1rem; font-weight: 600; margin: 28px 0 12px; color: var(--text); }
+    .article-content p { font-size: 1rem; line-height: 1.7; color: #44403c; margin-bottom: 14px; }
+    .article-content ul, .article-content ol { padding-left: 24px; margin-bottom: 14px; }
+    .article-content li { font-size: 1rem; line-height: 1.7; color: #44403c; margin-bottom: 6px; }
+    .article-content a { color: var(--accent); text-decoration: none; }
+    .article-content a:hover { color: var(--accent-hover); text-decoration: underline; }
+    .article-content strong { font-weight: 600; color: var(--text); }
+    .article-content hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+    .article-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 12px 20px;
+      margin: 14px 0;
+      background: var(--bg-subtle);
+      border-radius: 0 8px 8px 0;
+      color: #44403c;
+    }
+    .callout {
+      background: var(--bg-subtle);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #44403c;
+    }
+    .callout-icon { margin-right: 8px; }
+    footer {
+      text-align: center;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .footer-built-by { margin-bottom: 16px; line-height: 1.6; }
+    .footer-built-by a { color: var(--text); text-decoration: none; }
+    .footer-built-by a:hover { color: var(--accent); }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    footer a { color: var(--text-muted); text-decoration: none; transition: color 0.15s ease; }
+    footer a:hover { color: var(--text); }
+    @media (max-width: 600px) {
+      .container { padding: 40px 16px 60px; }
+      .article-title { font-size: 1.5rem; }
+      .article-content h2 { font-size: 1.15rem; }
+      footer { padding: 32px 0; }
+      .footer-links { gap: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/articles" class="back">&larr; All Articles</a>
+    <span class="article-badge badge-guide">Tool Guide</span>
+    <h1 class="article-title">How to Read Your Channel Audit (and What to Fix First)</h1>
+    <p class="article-meta">March 3, 2026</p>
+    <div class="article-content">
+<div class="callout"><span class="callout-icon">📊</span><a href="https://audit.youtubeproducer.app/" target="_blank" rel="noopener"><strong>Channel Audit</strong></a> is basically the tool I wish someone handed me when I first started digging into YouTube channels. It takes your data, crunches it, and points out what's working and what's not. The report can be a lot, though, so here's how I make sense of it.</div>
+<p><em>Last updated March 2026</em></p>
+<p>When I'm auditing a channel for a client — or for Ali Abdaal — I'm not really focused on just subscriber counts or total views. What I'm looking for are <strong>patterns</strong>: which videos are hitting, which ones aren't, and <em>why</em>. Channel Audit handles the heavy lifting of that analysis. The real insight, though, isn't just the data itself, but knowing what to actually <em>do</em> with it.</p>
+<h2>What Does a Channel Audit Report Include?</h2>
+<p>When you run an audit at <a href="https://audit.youtubeproducer.app/" target="_blank" rel="noopener"><strong>audit.youtubeproducer.app</strong></a>, you get a pretty comprehensive breakdown of your channel's recent performance:</p>
+<ul><li><strong>Performance tiers</strong> — every video gets sorted into one of 6 categories, from &quot;Outlier&quot; (10x+ your median) down to &quot;Underperformer&quot; (below 25% of median).</li>
+<li><strong>Title pattern analysis</strong> — it shows you which title formulas you've been using and how they're performing on average.</li>
+<li><strong>Duration sweet spots</strong> — this tells you how video length seems to correlate with performance on <em>your</em> specific channel.</li>
+<li><strong>Upload cadence</strong> — how frequently you're posting and if that consistency is actually affecting your views.</li>
+<li><strong>Format split</strong> — a breakdown of your content types, if that's relevant for your channel.</li>
+<li><strong>AI recommendations</strong> — specific, actionable suggestions that pull from all the data it just analyzed.</li></ul>
+<h2>How Do I Read the Performance Tiers?</h2>
+<p>This is probably the section I spend the most time on. The performance tier chart lays out which videos were hits, which were just okay, and which really didn't land. Here's what I look for in each tier:</p>
+<ul><li><strong>Outlier (10x+ median)</strong> — these are your viral hits. I always dig into these obsessively: what topic, title, thumbnail, and format did they use? That's often your blueprint.</li>
+<li><strong>Breakout (3x–10x median)</strong> — these are strong performers. They're consistently &quot;above average,&quot; and I've found there's usually a pattern here worth replicating.</li>
+<li><strong>Above Average (1.5x–3x median)</strong> — solid, but not quite exceptional. They're a good foundation, but often could be elevated with better packaging.</li>
+<li><strong>Average (0.5x–1.5x median)</strong> — this is your baseline. It's what your channel typically delivers.</li>
+<li><strong>Below Average (0.25x–0.5x median)</strong> — these are underperforming. I'd check if they share a common topic, format, or title style — that's usually a signal for what to cut back on.</li>
+<li><strong>Underperformer (&lt;0.25x median)</strong> — significant underperformance. No need to panic, every channel has these. But if you see a cluster, that's definitely a red flag.</li></ul>
+<p><strong>The actionable insight:</strong> I always look at the topics and packaging of the top 2 tiers, and then what the bottom 2 tiers seem to have in common. The goal is to lean into what's working and pull back from what isn't. (Seriously.)</p>
+<h2>What Should I Look For in the Title Pattern Analysis?</h2>
+<p>Channel Audit spots 11 common title patterns and then shows you how each one performs on <em>your</em> channel. Some of them include:</p>
+<ul><li><strong>How To / Tutorial</strong> — like &quot;How to Edit Videos Like a Pro&quot;</li>
+<li><strong>Listicle / Number</strong> — think &quot;7 Tools Every Creator Needs&quot;</li>
+<li><strong>Question</strong> — &quot;Is This the Best Camera for YouTube?&quot; (pretty self-explanatory)</li>
+<li><strong>Challenge / Experiment</strong> — &quot;I Tried Posting Every Day for 30 Days&quot;</li>
+<li><strong>Emotional / Clickbait</strong> — titles like &quot;This Changed Everything&quot;</li>
+<li><strong>Authority / Expert</strong> — &quot;$100M CEO Shares His Morning Routine&quot; (you get the idea)</li></ul>
+<p>And a few others. What I usually look for here:</p>
+<ol><li><strong>Which patterns have you used the most?</strong> If you're using &quot;How To&quot; for 80% of your titles, but your top performers are actually &quot;Challenge&quot; videos, that's a pretty clear mismatch.</li>
+<li><strong>Which patterns perform best on _your_ channel?</strong> Seriously, ignore generic advice here. Your audience might love listicles, while another channel's audience completely skips them.</li>
+<li><strong>Which patterns haven't you tried?</strong> If you've never used a question-style title, for example, that could be an interesting experiment.</li></ol>
+<p>For a deeper dive into how title patterns perform across 776 videos, I put together this <a href="https://youtubeproducer.app/articles/title-patterns" target="_blank" rel="noopener">analysis</a>.</p>
+<h2>How Do I Find My Ideal Video Duration?</h2>
+<p>The duration analysis sorts your videos into 8 buckets (Under 5min, 5–10min, 10–15min, 15–20min, 20–30min, 30–45min, 45–60min, 60min+). Then it shows you the average performance for each.</p>
+<p><strong>What I look for:</strong></p>
+<ul><li><strong>Your sweet spot</strong> — which duration bucket consistently pulls in the highest average views? That's usually where your audience engages best.</li>
+<li><strong>Overextension</strong> — if your 10–15 min videos are performing great but your 30+ min ones are underperforming, it might mean you're making some videos longer than they actually need to be.</li>
+<li><strong>Untested ranges</strong> — if you've never made a video under 10 minutes, for instance, that could be an interesting experiment.</li></ul>
+<p>Just remember: this is <em>your channel's</em> data, not some universal YouTube law. I actually wrote a whole article on <a href="https://youtubeproducer.app/articles/duration-sweet-spot" target="_blank" rel="noopener">why duration sweet spots vary by channel</a> — what works for a tech reviewer is often completely different from what works for a vlogger.</p>
+<h2>How Should I Use the AI Recommendations?</h2>
+<p>At the very end of the audit, you'll see AI-generated recommendations based on all that data. These are specific to <em>your</em> channel, which means they're not just generic YouTube advice.</p>
+<p>Here's how I typically approach them:</p>
+<ol><li><strong>Read them all first</strong> — I never act on the first one right away. It's good to get the full picture.</li>
+<li><strong>Rank by effort vs. impact</strong> — some recommendations are quick wins (like tweaking your title style), others are bigger shifts (like trying a new format). I usually start with the quick wins.</li>
+<li><strong>Cross-reference with your data</strong> — the AI might suggest &quot;try shorter videos.&quot; I'd always double-check the duration chart to see if the data actually supports that. It should, but it's good to verify.</li>
+<li><strong>Pick 2–3 to act on</strong> — trying to fix everything at once is a recipe for burnout. I'd pick the 2–3 changes most likely to move the needle and then test them over your next 5–10 uploads.</li></ol>
+<h2>How Often Should I Run a Channel Audit?</h2>
+<p>What I usually suggest:</p>
+<ul><li><strong>Monthly for active channels</strong> — if you're uploading weekly, a monthly audit is great for catching trends early.</li>
+<li><strong>After every 10 uploads</strong> — if you upload less often, I'd batch your audit after you've got a meaningful number of new videos out.</li>
+<li><strong>Before strategy changes</strong> — about to rebrand, change format, or shift your niche? Run an audit first to get a clear baseline.</li></ul>
+<p>The real power of auditing, though, is <strong>tracking changes over time</strong>. One audit is just a snapshot. Three audits over three months? That's a trend. And that's where the real insights live.</p>
+<h2>Run Your First Audit</h2>
+<p>Just head over to <a href="https://audit.youtubeproducer.app/" target="_blank" rel="noopener"><strong>audit.youtubeproducer.app</strong></a>, drop in your channel URL, and in under a minute you'll have a full performance breakdown with actionable recommendations. Your first audit is free, no sign-up required.</p>
+<hr>
+<p>I'm Becky Isjwara — YouTube producer for Ali Abdaal and the person who built YouTube Producer. If you're looking for help with your channel strategy, you can <a href="https://beckyisj.com/work-with-me" target="_blank" rel="noopener"><strong>work with me</strong></a>.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p class="footer-built-by">Built by <a href="https://beckyisj.com" target="_blank"><strong>Becky Isjwara</strong></a></p>
+      <div class="footer-links">
+        <a href="/">YouTube Producer</a>
+        <a href="/articles">Articles</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

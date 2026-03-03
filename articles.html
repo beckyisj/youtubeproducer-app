@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles — YouTube Producer</title>
+  <meta name="description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy. From the team behind YouTube Producer.">
+  <meta property="og:title" content="Articles — YouTube Producer">
+  <meta property="og:description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy.">
+  <meta property="og:url" content="https://youtubeproducer.app/articles">
+  <meta property="og:image" content="https://youtubeproducer.app/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Articles — YouTube Producer">
+  <meta name="twitter:description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy.">
+  <meta name="twitter:image" content="https://youtubeproducer.app/og-image.png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75ZD55B9SQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-75ZD55B9SQ');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #fafaf9;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f5f5f4;
+      --border: #e7e5e4;
+      --border-hover: #d6d3d1;
+      --text: #1c1917;
+      --text-secondary: #78716c;
+      --text-muted: #a8a29e;
+      --accent: #0d9488;
+      --accent-hover: #0f766e;
+      --accent-soft: rgba(13, 148, 136, 0.08);
+    }
+    body {
+      font-family: 'Manrope', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero {
+      background: linear-gradient(180deg, rgba(13, 148, 136, 0.06) 0%, transparent 100%);
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .hero-inner { padding: 60px 0 40px; }
+    .back { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: var(--text-secondary); text-decoration: none; }
+    .back:hover { color: var(--accent); }
+    .hero-inner h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+    .hero-inner p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      padding-bottom: 80px;
+    }
+    .article-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+    .article-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .article-card:hover::before { opacity: 1; }
+    .article-card-header { margin-bottom: 10px; }
+    .article-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+    .badge-data { background: rgba(124, 58, 237, 0.08); color: #7c3aed; }
+    .badge-guide { background: rgba(13, 148, 136, 0.08); color: #0d9488; }
+    .article-card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .article-card-excerpt {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .article-card-arrow {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--text-muted);
+      transition: all 0.15s ease;
+      font-size: 1rem;
+    }
+    .article-card:hover .article-card-arrow {
+      transform: translateX(4px);
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .footer-built-by { margin-bottom: 16px; line-height: 1.6; }
+    .footer-built-by a { color: var(--text); text-decoration: none; }
+    .footer-built-by a:hover { color: var(--accent); }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    footer a { color: var(--text-muted); text-decoration: none; transition: color 0.15s ease; }
+    footer a:hover { color: var(--text); }
+    @media (max-width: 700px) {
+      .articles-grid { grid-template-columns: 1fr; }
+      .hero-inner { padding: 40px 0 28px; }
+      .hero-inner h1 { font-size: 1.6rem; }
+      .article-card { padding: 20px; }
+      footer { padding: 32px 0; }
+      .footer-links { gap: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <a href="/" class="back">&larr; YouTube Producer</a>
+        <h1>Articles</h1>
+        <p>Data-driven insights on YouTube thumbnails, titles, and channel strategy.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="articles-grid">
+
+      <a href="/articles/dark-thumbnails" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">Dark Mode Thumbnails Are Taking Over YouTube</h3>
+        <p class="article-card-excerpt">Dark/moody is the #1 color scheme for YouTube thumbnails. Seriously. My 776-video dataset (built as Ali Abdaal's YouTube producer) shows 38% use it — 41% in...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/duration-sweet-spot" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">How to Find Your Channel's Duration Sweet Spot</h3>
+        <p class="article-card-excerpt">Every channel has a duration sweet spot — that ideal video length where views peak. As YouTube producer for Ali Abdaal, I track this obsessively. I've found...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/package-podcast" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-guide">Tool Guide</span>
+        </div>
+        <h3 class="article-card-title">How to Package a Podcast for YouTube in 5 Minutes</h3>
+        <p class="article-card-excerpt">I built Podcast Packager because packaging episodes of my podcast Small Creator Big World used to eat up hours each week. I wanted to mimic the packaging...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/read-channel-audit" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-guide">Tool Guide</span>
+        </div>
+        <h3 class="article-card-title">How to Read Your Channel Audit (and What to Fix First)</h3>
+        <p class="article-card-excerpt">Channel Audit is basically the tool I wish someone handed me when I first started digging into YouTube channels. It takes your data, crunches it, and points...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/steal-video-ideas" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-guide">Tool Guide</span>
+        </div>
+        <h3 class="article-card-title">How to Steal Your Next Video Idea (Ethically)</h3>
+        <p class="article-card-excerpt">Keeping Ali Abdaal's content pipeline full? That's a big part of my job as his YouTube producer. I built Next Video to systematize how I find video ideas — and...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/quote-carousel-guide" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-guide">Tool Guide</span>
+        </div>
+        <h3 class="article-card-title">How to Turn One Video Into a Quote Carousel</h3>
+        <p class="article-card-excerpt">I realized most podcast episodes and interviews have at least 5-10 really shareable quotes. That's why I built the Quote Carousel Generator — it takes those...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/shorts-vs-longform" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">Shorts vs Long-Form: What the Data Says</h3>
+        <p class="article-card-excerpt">Should you post YouTube Shorts? It's a question I get a lot. As Ali Abdaal's YouTube producer, I'm watching both formats closely. What I've found is Shorts can...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/face-rule" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">The Face Rule: Why 57% of Top Money Niche Thumbnails Use Close-Up Faces</h3>
+        <p class="article-card-excerpt">I analyzed 776 YouTube thumbnails across 57 channels as part of my work for Ali Abdaal. The clearest differentiator between a high-performing thumbnail and an...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/title-patterns" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">The Title Patterns That Actually Drive Views</h3>
+        <p class="article-card-excerpt">As Ali Abdaal's YouTube producer (6.5M subs), I've analyzed title patterns across hundreds of YouTube videos. Some patterns consistently outperform the...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/upload-cadence" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">Upload Cadence Doesn't Matter as Much as You Think</h3>
+        <p class="article-card-excerpt">&quot;Post consistently&quot; is the most common YouTube advice. It's also the most misleading. As Ali Abdaal's YouTube producer, I've analyzed upload patterns across...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/thumbnail-analysis" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">We Analyzed 776 Thumbnails. Here's What Top Creators Do Differently</h3>
+        <p class="article-card-excerpt">I ran 776 long-form YouTube thumbnails through AI vision, covering 57 channels in Money, Self-Improvement, Creator, and Lifestyle. We analyzed everything: face...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+
+      <a href="/articles/packaging-problem" class="article-card">
+        <div class="article-card-header">
+          <span class="article-badge badge-data">Data Piece</span>
+        </div>
+        <h3 class="article-card-title">Your Videos Aren't Underperforming — Your Packaging Is</h3>
+        <p class="article-card-excerpt">Most channels with underwhelming views don't have a content problem. They've got a packaging problem (trust me on this one). I see it all the time as YouTube...</p>
+        <span class="article-card-arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="footer-built-by">Built by <a href="https://beckyisj.com" target="_blank"><strong>Becky Isjwara</strong></a></p>
+      <div class="footer-links">
+        <a href="/">YouTube Producer</a>
+        <a href="/articles">Articles</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
