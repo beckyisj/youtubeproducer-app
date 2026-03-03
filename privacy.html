@@ -34,36 +34,41 @@
   <div class="container">
     <a href="/" class="back">← YouTube Producer</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: February 19, 2026</p>
+    <p class="updated">Last updated: March 3, 2026</p>
 
-    <p>This privacy policy covers the tools and Chrome extensions built by YouTube Producer (<a href="https://youtubeproducer.app">youtubeproducer.app</a>), including the YT Carousel Frame Capture extension and the YT Quote Carousel Generator web app.</p>
+    <p>This privacy policy covers all tools and extensions built by YouTube Producer (<a href="https://youtubeproducer.app">youtubeproducer.app</a>), including Podcast Packager, Quote Carousel Generator, Thumbnail Generator, Channel Audit, Next Video, and the YT Carousel Frame Capture Chrome extension.</p>
 
     <h2>What we collect</h2>
-    <p>Our tools process the following data to function:</p>
     <ul>
-      <li><strong>YouTube video content</strong> — The Chrome extension captures video frames (screenshots of the video player) and extracts transcript/caption text from YouTube videos you choose to process. This data is sent directly to the companion web app running in your browser.</li>
-      <li><strong>Transcript text</strong> — Transcripts are sent to our server solely to generate AI-powered quote suggestions. Transcripts are not stored after processing.</li>
+      <li><strong>Email address</strong> — If you sign in (via magic link), we store your email to manage your account, generation history, and subscription. Sign-in is optional for basic use.</li>
+      <li><strong>YouTube channel data</strong> — When you use Channel Audit, Next Video, or Thumbnail Generator, we fetch public data (video titles, view counts, thumbnails, etc.) from the YouTube Data API for the channels you choose to analyze.</li>
+      <li><strong>Transcript text</strong> — Podcast Packager and Quote Carousel accept transcript text you paste in. This is sent to our server for AI processing and is not stored after your session.</li>
+      <li><strong>Video frames</strong> — The Chrome extension captures screenshots of the YouTube video player locally in your browser. Frames are never sent to any server.</li>
+      <li><strong>Generation history</strong> — Results from tools (titles, quotes, audit reports, video ideas, thumbnail concepts) are saved to your account so you can revisit them.</li>
+      <li><strong>Usage analytics</strong> — We use Google Analytics (GA4) to understand how our tools are used (page views, feature usage). This data is anonymous and aggregated.</li>
     </ul>
 
     <h2>What we don't collect</h2>
     <ul>
-      <li>No personally identifiable information (name, email, address)</li>
-      <li>No browsing history or web activity tracking</li>
-      <li>No cookies or analytics trackers</li>
-      <li>No financial or payment information</li>
-      <li>No data from YouTube pages you don't explicitly process</li>
-    </ul>
-
-    <h2>How data is handled</h2>
-    <ul>
-      <li>Video frames are captured locally in your browser and never sent to any server.</li>
-      <li>Transcript text is sent to our server only for AI quote generation, then discarded.</li>
-      <li>No user data is sold, shared with third parties, or used for advertising.</li>
-      <li>No data is stored permanently on our servers.</li>
+      <li>No passwords — authentication is via magic link (email only)</li>
+      <li>No browsing history or activity outside our tools</li>
+      <li>No data from YouTube pages you don't explicitly choose to process</li>
+      <li>No data is sold, shared with advertisers, or used for ad targeting</li>
     </ul>
 
     <h2>Third-party services</h2>
-    <p>The web app uses DeepSeek AI to generate quote suggestions from transcripts. Transcript text is sent to DeepSeek's API for processing. No other third-party services receive your data.</p>
+    <p>Our tools rely on the following third-party services to function:</p>
+    <ul>
+      <li><strong>Google Gemini AI</strong> — Primary AI provider. Transcript text, channel data, and video metadata are sent to Google's Gemini API to generate titles, quotes, recommendations, video ideas, and thumbnail concepts.</li>
+      <li><strong>DeepSeek AI</strong> — Fallback AI provider, used when Gemini is unavailable. Receives the same data as Gemini for the same purposes.</li>
+      <li><strong>YouTube Data API</strong> — Used to fetch public channel and video information for analysis tools.</li>
+      <li><strong>Supabase</strong> — Hosts our database and handles authentication. Your email, generation history, and account data are stored in Supabase.</li>
+      <li><strong>Stripe</strong> — Handles subscription payments. We never see or store your card details — Stripe processes all payment information directly.</li>
+      <li><strong>Google Analytics</strong> — Anonymous usage analytics across our tools.</li>
+    </ul>
+
+    <h2>Payments</h2>
+    <p>Pro subscriptions ($19/month) are processed entirely by <a href="https://stripe.com/privacy">Stripe</a>. We do not store credit card numbers or billing details. Stripe may collect information as described in their privacy policy.</p>
 
     <h2>Chrome extension permissions</h2>
     <p>The YT Carousel Frame Capture extension requests the following permissions:</p>
@@ -74,8 +79,16 @@
       <li><strong>Host permissions</strong> — To access YouTube for frame capture and the companion web app for communication.</li>
     </ul>
 
+    <h2>Data retention</h2>
+    <ul>
+      <li>Transcript text is discarded after AI processing — it is not stored on our servers.</li>
+      <li>Generation history is retained as long as your account exists.</li>
+      <li>YouTube channel analysis data may be cached for up to 7 days to reduce API usage.</li>
+      <li>You can request deletion of your account and all associated data by contacting us.</li>
+    </ul>
+
     <h2>Contact</h2>
-    <p>Questions about this policy? Reach out at <a href="https://www.linkedin.com/in/beckyisj/">linkedin.com/in/beckyisj</a>.</p>
+    <p>Questions about this policy? Reach out at <a href="https://www.linkedin.com/in/beckyisj/">linkedin.com/in/beckyisj</a> or email <a href="mailto:beckyisjwara@gmail.com">beckyisjwara@gmail.com</a>.</p>
   </div>
 </body>
 </html>
