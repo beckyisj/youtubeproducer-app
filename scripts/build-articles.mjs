@@ -170,9 +170,10 @@ function renderThumbnailGrid(blockItems) {
     // Fallback: show video title if no description extracted
     if (!desc && video?.title) desc = video.title;
 
+    const altText = video?.title ? `${channelName} — ${video.title}` : channelName;
     return `<a class="thumb-card" href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener">
       <div class="thumb-img-wrap">
-        <img src="img/${videoId}.jpg" alt="${escapeHtml(channelName)}" loading="lazy">
+        <img src="img/${videoId}.jpg" alt="${escapeHtml(altText)}" loading="lazy">
         ${views ? `<span class="views-badge">${views} views</span>` : ''}
       </div>
       <div class="thumb-meta">
@@ -358,17 +359,59 @@ function articlePageHtml(article, contentHtml) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(article.title)} — YouTube Producer</title>
   <meta name="description" content="${escapeHtml(article.excerpt)}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="${SITE_URL}/articles/${article.slug}">
   <meta property="og:title" content="${escapeHtml(article.title)} — YouTube Producer">
   <meta property="og:description" content="${escapeHtml(article.excerpt)}">
   <meta property="og:url" content="${SITE_URL}/articles/${article.slug}">
   <meta property="og:image" content="${SITE_URL}/og-image.png">
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="YouTube Producer">
+  <meta property="article:published_time" content="${article.created}">
+  <meta property="article:author" content="https://beckyisj.com">
+  <meta property="article:section" content="${escapeHtml(article.type)}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@beckyisj">
+  <meta name="twitter:creator" content="@beckyisj">
   <meta name="twitter:title" content="${escapeHtml(article.title)} — YouTube Producer">
   <meta name="twitter:description" content="${escapeHtml(article.excerpt)}">
   <meta name="twitter:image" content="${SITE_URL}/og-image.png">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "${escapeHtml(article.title)}",
+        "description": "${escapeHtml(article.excerpt)}",
+        "image": "${SITE_URL}/og-image.png",
+        "datePublished": "${article.created}",
+        "author": {
+          "@type": "Person",
+          "name": "Becky Isjwara",
+          "url": "https://beckyisj.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "YouTube Producer",
+          "url": "${SITE_URL}",
+          "logo": { "@type": "ImageObject", "url": "${SITE_URL}/favicon.svg" }
+        },
+        "mainEntityOfPage": "${SITE_URL}/articles/${article.slug}"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "${SITE_URL}" },
+          { "@type": "ListItem", "position": 2, "name": "Articles", "item": "${SITE_URL}/articles" },
+          { "@type": "ListItem", "position": 3, "name": "${escapeHtml(article.title)}" }
+        ]
+      }
+    ]
+  }
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
   <script>
@@ -601,12 +644,14 @@ function articlePageHtml(article, contentHtml) {
 <body>
   <div class="container">
     <a href="/articles" class="back">&larr; All Articles</a>
+    <article>
     <span class="article-badge ${article.type === 'Data Piece' ? 'badge-data' : 'badge-guide'}">${escapeHtml(article.type)}</span>
     <h1 class="article-title">${escapeHtml(article.title)}</h1>
-    <p class="article-meta">${formatDate(article.created)}</p>
+    <p class="article-meta"><time datetime="${article.created}">${formatDate(article.created)}</time></p>
     <div class="article-content">
 ${contentHtml}
     </div>
+    </article>
   </div>
   <footer>
     <div class="container">
@@ -669,12 +714,17 @@ function listingPageHtml(articles) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles — YouTube Producer</title>
   <meta name="description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy. From the team behind YouTube Producer.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="${SITE_URL}/articles">
   <meta property="og:title" content="Articles — YouTube Producer">
   <meta property="og:description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy.">
   <meta property="og:url" content="${SITE_URL}/articles">
   <meta property="og:image" content="${SITE_URL}/og-image.png">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YouTube Producer">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@beckyisj">
+  <meta name="twitter:creator" content="@beckyisj">
   <meta name="twitter:title" content="Articles — YouTube Producer">
   <meta name="twitter:description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy.">
   <meta name="twitter:image" content="${SITE_URL}/og-image.png">
@@ -912,7 +962,31 @@ async function main() {
   writeFileSync(join(ROOT, 'articles.html'), listingHtml);
   console.log('  Wrote: articles.html');
 
-  console.log(`\nDone! Generated ${articles.length} article pages + listing page.`);
+  // Generate sitemap.xml
+  const today = new Date().toISOString().split('T')[0];
+  const sitemapUrls = [
+    `  <url><loc>${SITE_URL}/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>`,
+    `  <url><loc>${SITE_URL}/articles</loc><lastmod>${today}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>`,
+    ...articles.map(a =>
+      `  <url><loc>${SITE_URL}/articles/${a.slug}</loc><lastmod>${a.created}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`
+    ),
+  ];
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.join('\n')}
+</urlset>`;
+  writeFileSync(join(ROOT, 'sitemap.xml'), sitemapXml);
+  console.log('  Wrote: sitemap.xml');
+
+  // Generate robots.txt
+  const robotsTxt = `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml`;
+  writeFileSync(join(ROOT, 'robots.txt'), robotsTxt);
+  console.log('  Wrote: robots.txt');
+
+  console.log(`\nDone! Generated ${articles.length} article pages + listing page + sitemap + robots.txt.`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
