@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Turn One Video Into a Quote Carousel — YouTube Producer</title>
+  <meta name="description" content="I realized most podcast episodes and interviews have at least 5-10 really shareable quotes. That's why I built the Quote Carousel Generator — it takes those...">
+  <meta property="og:title" content="How to Turn One Video Into a Quote Carousel — YouTube Producer">
+  <meta property="og:description" content="I realized most podcast episodes and interviews have at least 5-10 really shareable quotes. That's why I built the Quote Carousel Generator — it takes those...">
+  <meta property="og:url" content="https://youtubeproducer.app/articles/quote-carousel-guide">
+  <meta property="og:image" content="https://youtubeproducer.app/og-image.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Turn One Video Into a Quote Carousel — YouTube Producer">
+  <meta name="twitter:description" content="I realized most podcast episodes and interviews have at least 5-10 really shareable quotes. That's why I built the Quote Carousel Generator — it takes those...">
+  <meta name="twitter:image" content="https://youtubeproducer.app/og-image.png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75ZD55B9SQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-75ZD55B9SQ');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #fafaf9;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f5f5f4;
+      --border: #e7e5e4;
+      --text: #1c1917;
+      --text-secondary: #78716c;
+      --text-muted: #a8a29e;
+      --accent: #0d9488;
+      --accent-hover: #0f766e;
+    }
+    body {
+      font-family: 'Manrope', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px 80px; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 0.9rem; color: var(--text-secondary); text-decoration: none; }
+    .back:hover { color: var(--accent); }
+    .article-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+    }
+    .badge-data { background: rgba(124, 58, 237, 0.08); color: #7c3aed; }
+    .badge-guide { background: rgba(13, 148, 136, 0.08); color: #0d9488; }
+    .article-title { font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; line-height: 1.2; }
+    .article-meta { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 40px; }
+    .article-content h2 { font-size: 1.25rem; font-weight: 600; margin: 36px 0 14px; color: var(--text); }
+    .article-content h3 { font-size: 1.1rem; font-weight: 600; margin: 28px 0 12px; color: var(--text); }
+    .article-content p { font-size: 1rem; line-height: 1.7; color: #44403c; margin-bottom: 14px; }
+    .article-content ul, .article-content ol { padding-left: 24px; margin-bottom: 14px; }
+    .article-content li { font-size: 1rem; line-height: 1.7; color: #44403c; margin-bottom: 6px; }
+    .article-content a { color: var(--accent); text-decoration: none; }
+    .article-content a:hover { color: var(--accent-hover); text-decoration: underline; }
+    .article-content strong { font-weight: 600; color: var(--text); }
+    .article-content hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+    .article-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 12px 20px;
+      margin: 14px 0;
+      background: var(--bg-subtle);
+      border-radius: 0 8px 8px 0;
+      color: #44403c;
+    }
+    .callout {
+      background: var(--bg-subtle);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #44403c;
+    }
+    .callout-icon { margin-right: 8px; }
+    footer {
+      text-align: center;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .footer-built-by { margin-bottom: 16px; line-height: 1.6; }
+    .footer-built-by a { color: var(--text); text-decoration: none; }
+    .footer-built-by a:hover { color: var(--accent); }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    footer a { color: var(--text-muted); text-decoration: none; transition: color 0.15s ease; }
+    footer a:hover { color: var(--text); }
+    @media (max-width: 600px) {
+      .container { padding: 40px 16px 60px; }
+      .article-title { font-size: 1.5rem; }
+      .article-content h2 { font-size: 1.15rem; }
+      footer { padding: 32px 0; }
+      .footer-links { gap: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/articles" class="back">&larr; All Articles</a>
+    <span class="article-badge badge-guide">Tool Guide</span>
+    <h1 class="article-title">How to Turn One Video Into a Quote Carousel</h1>
+    <p class="article-meta">March 3, 2026</p>
+    <div class="article-content">
+<div class="callout"><span class="callout-icon">🎨</span>I realized most podcast episodes and interviews have at least 5-10 really shareable quotes. That's why I built the <a href="https://carousel.youtubeproducer.app/" target="_blank" rel="noopener"><strong>Quote Carousel Generator</strong></a> — it takes those moments and turns them into scroll-stopping social carousels in minutes. No design skills required.</div>
+<p><em>Last updated March 2026</em></p>
+<p>Quote carousels consistently drive high engagement on Instagram and LinkedIn. I've seen that a good one, with a strong hook, gets saved, shared, and commented on way more than a simple text post. The catch? Making them by hand — finding quotes, designing slides, keeping things on brand — is a huge time sink.</p>
+<p>Here's how I get from a raw video transcript to a polished carousel in less than five minutes.</p>
+<h2>What Is a Quote Carousel and Why Does It Work?</h2>
+<p>A quote carousel is a multi-slide social post, usually 5-10 slides, that highlights key quotes or insights from a piece of content. They work for a few reasons:</p>
+<ul><li><strong>Swipe behavior</strong> — Each slide is a micro-commitment. People tend to finish a carousel once they start swiping.</li>
+<li><strong>Saveable format</strong> — People save these to revisit later. That's a huge signal to the algorithm that your content is valuable.</li>
+<li><strong>Easy to share</strong> — A well-packaged quote is exactly what people send to friends or reshare on their stories.</li>
+<li><strong>Content repurposing</strong> — You've already done the heavy lifting creating the content. This just repackages it for new platforms.</li></ul>
+<h2>How Do I Create a Quote Carousel From My Video?</h2>
+<h3>Step 1: Get your transcript</h3>
+<p>Just like with <a href="https://packager.youtubeproducer.app/" target="_blank" rel="noopener">Podcast Packager</a>, you'll need your transcript. Pull it from YouTube captions, your recording software, or a transcription service. Raw text works perfectly.</p>
+<h3>Step 2: Paste it into the Quote Carousel Generator</h3>
+<p>Head over to <a href="https://carousel.youtubeproducer.app/" target="_blank" rel="noopener"><strong>carousel.youtubeproducer.app</strong></a> and paste in your transcript. The AI will then:</p>
+<ul><li>Read through the full transcript</li>
+<li>Identify the most shareable, impactful quotes</li>
+<li>Organize them into a logical carousel sequence with a hook slide and closing CTA</li></ul>
+<h3>Step 3: Customize the design</h3>
+<p>The generator lets you tweak a few things:</p>
+<ul><li><strong>Colors</strong> — match your brand palette or pick from presets</li>
+<li><strong>Font</strong> — choose from a curated set of fonts that work well on social</li>
+<li><strong>Layout</strong> — adjust text positioning and slide structure</li>
+<li><strong>Attribution</strong> — add speaker names, episode titles, or your handle</li></ul>
+<h3>Step 4: Export and post</h3>
+<p>Download your carousel as individual slide images. They're ready to upload directly to Instagram, LinkedIn, or Twitter/X.</p>
+<h2>What Makes a Good Quote for a Carousel?</h2>
+<p>I've found that not every line from a transcript makes a good carousel quote. Here's what I typically look for:</p>
+<ul><li><strong>Standalone insight</strong> — The quote needs to make sense on its own. Someone scrolling should instantly grasp the point.</li>
+<li><strong>Emotional resonance</strong> — it challenges a belief, validates a feeling, or sparks curiosity.</li>
+<li><strong>Concise</strong> — 1–3 sentences max. If it needs a paragraph to land, it's not a carousel quote.</li>
+<li><strong>Actionable</strong> — the best carousel quotes give people something they can do or think about differently.</li></ul>
+<p><em>The AI handles the heavy lifting here, but it's always worth a quick scan. You might want to swap in a quote you know really resonated with your audience (trust me on this one).</em></p>
+<h2>How Should I Structure a Carousel for Maximum Engagement?</h2>
+<p>What I've seen work best across social platforms usually follows this structure:</p>
+<ol><li><strong>Hook slide</strong> — This first slide is everything. Use a bold statement or question that stops the scroll cold. (&quot;Most YouTubers get this wrong.&quot;)</li>
+<li><strong>3–7 quote slides</strong> — each one delivers a standalone insight. Vary the length and tone to keep it dynamic.</li>
+<li><strong>CTA slide</strong> — close with a call to action: &quot;Watch the full episode,&quot; &quot;Follow for more,&quot; or &quot;Save this for later.&quot;</li></ol>
+<p><strong>The Quote Carousel Generator builds this structure in automatically — hook, quotes, and CTA are all part of the sequence.</strong></p>
+<h2>Can I Use This for Content That Isn't a Podcast?</h2>
+<p>Absolutely. This tool works with any transcript or text input. You can use it for:</p>
+<ul><li>Book highlights (paste your Kindle notes)</li>
+<li>Webinar takeaways</li>
+<li>Thread-style posts reformatted as carousels</li>
+<li>Course content snippets for marketing</li>
+<li>Conference talk key moments</li></ul>
+<p>If you have text with quotable moments, the tool can turn it into a carousel. It's that simple.</p>
+<h2>How Does This Fit Into a Content Repurposing Workflow?</h2>
+<p>Here's the workflow I use for my podcast <a href="https://www.youtube.com/@SmallCreatorBigWorld" target="_blank" rel="noopener"><strong>Small Creator Big World</strong></a> — and the one I'd recommend for any creator who publishes long-form video:</p>
+<ol><li>Record and publish the long-form video on YouTube</li>
+<li>Run the transcript through <a href="https://packager.youtubeproducer.app/" target="_blank" rel="noopener">Podcast Packager</a> for titles, descriptions, and quotes</li>
+<li>Take the best quotes and feed them into <a href="https://carousel.youtubeproducer.app/" target="_blank" rel="noopener">Quote Carousel Generator</a> for Instagram/LinkedIn carousels</li></ol>
+<p><strong>One piece of content, multiple platforms, minimal extra effort.</strong> That's the whole idea behind these tools — they're built to work together (seriously).</p>
+<h2>Try It With Your Last Video</h2>
+<p>Go to <a href="https://carousel.youtubeproducer.app/" target="_blank" rel="noopener"><strong>carousel.youtubeproducer.app</strong></a> and drop in a transcript. In minutes, you'll have a branded quote carousel ready to post. No Canva, no design skills, no endless revisions.</p>
+<hr>
+<p>I'm Becky Isjwara — YouTube producer for Ali Abdaal and the builder behind YouTube Producer. If you want help with your channel strategy, <a href="https://beckyisj.com/work-with-me" target="_blank" rel="noopener"><strong>work with me</strong></a>.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p class="footer-built-by">Built by <a href="https://beckyisj.com" target="_blank"><strong>Becky Isjwara</strong></a></p>
+      <div class="footer-links">
+        <a href="/">YouTube Producer</a>
+        <a href="/articles">Articles</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
