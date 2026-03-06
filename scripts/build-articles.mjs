@@ -310,6 +310,9 @@ function cleanCockyAsides(html) {
     .replace(/\s*\(seriously,\s*it happens\.?\)\s*/gi, ' ')
     // Remove trailing " (seriously)" at end of sentences before closing tags
     .replace(/\s*\(seriously\)\s*(?=<)/gi, ' ')
+    // Remove "for Ali Abdaal" from closing bio paragraphs
+    .replace(/YouTube producer for Ali Abdaal,?\s*/gi, 'YouTube producer ')
+    .replace(/Ali Abdaal'?s YouTube producer/gi, 'YouTube producer')
     // Clean double spaces left behind
     .replace(/  +/g, ' ')
     // Clean space before period/comma
