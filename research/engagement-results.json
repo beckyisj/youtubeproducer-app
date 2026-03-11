@@ -1,0 +1,694 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-11T08:27:36.817Z",
+    "totalChannels": 37,
+    "totalVideos": 3536,
+    "niches": [
+      "self-development",
+      "business",
+      "creator",
+      "productivity",
+      "health",
+      "education",
+      "tech"
+    ]
+  },
+  "nicheEngagement": [
+    {
+      "niche": "self-development",
+      "videoCount": 726,
+      "totalViews": 291877074,
+      "likeToViewPct": 3.42,
+      "commentToViewPct": 0.1548,
+      "likeToCommentRatio": 22.1
+    },
+    {
+      "niche": "business",
+      "videoCount": 365,
+      "totalViews": 96937353,
+      "likeToViewPct": 3.314,
+      "commentToViewPct": 0.3085,
+      "likeToCommentRatio": 10.7
+    },
+    {
+      "niche": "health",
+      "videoCount": 232,
+      "totalViews": 356334851,
+      "likeToViewPct": 3.222,
+      "commentToViewPct": 0.0963,
+      "likeToCommentRatio": 33.5
+    },
+    {
+      "niche": "productivity",
+      "videoCount": 1099,
+      "totalViews": 1103944251,
+      "likeToViewPct": 3.187,
+      "commentToViewPct": 0.139,
+      "likeToCommentRatio": 22.9
+    },
+    {
+      "niche": "creator",
+      "videoCount": 371,
+      "totalViews": 122900354,
+      "likeToViewPct": 3.095,
+      "commentToViewPct": 0.1841,
+      "likeToCommentRatio": 16.8
+    },
+    {
+      "niche": "tech",
+      "videoCount": 300,
+      "totalViews": 973850132,
+      "likeToViewPct": 3.007,
+      "commentToViewPct": 0.184,
+      "likeToCommentRatio": 16.3
+    },
+    {
+      "niche": "education",
+      "videoCount": 443,
+      "totalViews": 2909081637,
+      "likeToViewPct": 2.888,
+      "commentToViewPct": 0.1472,
+      "likeToCommentRatio": 19.6
+    }
+  ],
+  "top10CommentNormalized": [
+    {
+      "title": "How to make a custom YouTube channel URL 2021 - Latest Update",
+      "channel": "Film Booth",
+      "niche": "creator",
+      "views": 1138,
+      "comments": 43,
+      "commentsPer100K": 3778.6
+    },
+    {
+      "title": "How to Fix America’s Population Decline",
+      "channel": "Valuetainment",
+      "niche": "business",
+      "views": 38558,
+      "comments": 1122,
+      "commentsPer100K": 2909.9
+    },
+    {
+      "title": "I put so much pressure on myself and I still don't know why. | Weekly Yap 4/52",
+      "channel": "Vanessa Lau",
+      "niche": "creator",
+      "views": 11231,
+      "comments": 310,
+      "commentsPer100K": 2760.2
+    },
+    {
+      "title": "The Rise of Anti-American Sentiment Abroad Is Stunning",
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "views": 73545,
+      "comments": 1774,
+      "commentsPer100K": 2412.1
+    },
+    {
+      "title": "“Israel’s Enemies Are OUR Enemies” - Randy Fine CHALLENGED In Explosive America First Debate",
+      "channel": "Valuetainment",
+      "niche": "business",
+      "views": 19151,
+      "comments": 429,
+      "commentsPer100K": 2240.1
+    },
+    {
+      "title": "“Iran Crossed A Line” - Iran STRIKES Bahrain Water Supply In MAJOR Civilian Attack",
+      "channel": "Valuetainment",
+      "niche": "business",
+      "views": 18320,
+      "comments": 375,
+      "commentsPer100K": 2046.9
+    },
+    {
+      "title": "Pivoting is hard and this is how I REALLY feel.",
+      "channel": "Vanessa Lau",
+      "niche": "creator",
+      "views": 48216,
+      "comments": 952,
+      "commentsPer100K": 1974.4
+    },
+    {
+      "title": "“Tucker Has LOST His Way” - Trump KICKS Tucker Carlson Out Of MAGA",
+      "channel": "Valuetainment",
+      "niche": "business",
+      "views": 120664,
+      "comments": 2318,
+      "commentsPer100K": 1921
+    },
+    {
+      "title": "“Muslims Don’t Like Dogs” - Randy Fine CALLED OUT Over Viral Anti-Islam Tweet",
+      "channel": "Valuetainment",
+      "niche": "business",
+      "views": 68747,
+      "comments": 1314,
+      "commentsPer100K": 1911.4
+    },
+    {
+      "title": "We made 3 YouTube Videos a week for 2 years - Heres what we learnt",
+      "channel": "Film Booth",
+      "niche": "creator",
+      "views": 6777,
+      "comments": 129,
+      "commentsPer100K": 1903.5
+    }
+  ],
+  "top10LikeNormalized": [
+    {
+      "title": "I can't believe I have to say this (again)",
+      "channel": "Ryan Holiday",
+      "niche": "self-development",
+      "views": 22026,
+      "likes": 2742,
+      "likesPer100K": 12448.9
+    },
+    {
+      "title": "1 Million Subscribers",
+      "channel": "Colin and Samir",
+      "niche": "creator",
+      "views": 124374,
+      "likes": 13829,
+      "likesPer100K": 11118.9
+    },
+    {
+      "title": "I went on an adventure, alone.",
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "views": 156633,
+      "likes": 17173,
+      "likesPer100K": 10963.8
+    },
+    {
+      "title": "You Have To Learn To Say \"No\"",
+      "channel": "Alex Hormozi",
+      "niche": "business",
+      "views": 4458,
+      "likes": 488,
+      "likesPer100K": 10946.6
+    },
+    {
+      "title": "What Getting 1 Million Subscribers Has Taught Me",
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "views": 130934,
+      "likes": 14014,
+      "likesPer100K": 10703.1
+    },
+    {
+      "title": "The English Language is So Confusing.",
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "views": 114537,
+      "likes": 12064,
+      "likesPer100K": 10532.8
+    },
+    {
+      "title": "Лучшая утренняя зарядка для дома: делай каждый день!🔥",
+      "channel": "Dr. Berg - официальный русскоязычный канал",
+      "niche": "health",
+      "views": 59666,
+      "likes": 6066,
+      "likesPer100K": 10166.6
+    },
+    {
+      "title": "Why The Internet Will Discourage You (And How to Beat It)",
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "views": 190589,
+      "likes": 19258,
+      "likesPer100K": 10104.5
+    },
+    {
+      "title": "What if Nothing is Actually Going Wrong?",
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "views": 71910,
+      "likes": 7181,
+      "likesPer100K": 9986.1
+    },
+    {
+      "title": "You Can Achieve a Lot in 3 Years",
+      "channel": "Captain Sinbad",
+      "niche": "productivity",
+      "views": 54993,
+      "likes": 5467,
+      "likesPer100K": 9941.3
+    }
+  ],
+  "durationEngagement": [
+    {
+      "bucket": "Under 5min",
+      "videoCount": 556,
+      "avgViews": 1133484,
+      "likeToViewPct": 4.984,
+      "commentToViewPct": 0.0812,
+      "likesPer100K": 4983.6,
+      "commentsPer100K": 81.2
+    },
+    {
+      "bucket": "5–10min",
+      "videoCount": 650,
+      "avgViews": 1043085,
+      "likeToViewPct": 3.154,
+      "commentToViewPct": 0.1515,
+      "likesPer100K": 3153.6,
+      "commentsPer100K": 151.5
+    },
+    {
+      "bucket": "10–15min",
+      "videoCount": 946,
+      "avgViews": 1448519,
+      "likeToViewPct": 3.072,
+      "commentToViewPct": 0.1628,
+      "likesPer100K": 3071.5,
+      "commentsPer100K": 162.8
+    },
+    {
+      "bucket": "15–20min",
+      "videoCount": 492,
+      "avgViews": 1991899,
+      "likeToViewPct": 2.964,
+      "commentToViewPct": 0.1995,
+      "likesPer100K": 2963.9,
+      "commentsPer100K": 199.5
+    },
+    {
+      "bucket": "20–30min",
+      "videoCount": 351,
+      "avgViews": 3475784,
+      "likeToViewPct": 2.433,
+      "commentToViewPct": 0.1445,
+      "likesPer100K": 2433.3,
+      "commentsPer100K": 144.5
+    },
+    {
+      "bucket": "30–45min",
+      "videoCount": 196,
+      "avgViews": 3444375,
+      "likeToViewPct": 2.37,
+      "commentToViewPct": 0.137,
+      "likesPer100K": 2370.5,
+      "commentsPer100K": 137
+    },
+    {
+      "bucket": "45–60min",
+      "videoCount": 77,
+      "avgViews": 2083117,
+      "likeToViewPct": 2.626,
+      "commentToViewPct": 0.1751,
+      "likesPer100K": 2626.4,
+      "commentsPer100K": 175.1
+    },
+    {
+      "bucket": "60min+",
+      "videoCount": 268,
+      "avgViews": 525715,
+      "likeToViewPct": 2.229,
+      "commentToViewPct": 0.166,
+      "likesPer100K": 2228.8,
+      "commentsPer100K": 166
+    }
+  ],
+  "channelEngagement": [
+    {
+      "channel": "Vsauce",
+      "niche": "education",
+      "subscribers": 24700000,
+      "videoCount": 28,
+      "totalViews": 274489351,
+      "likeToViewPct": 6.647,
+      "commentToViewPct": 0.0993,
+      "engagementPct": 6.746
+    },
+    {
+      "channel": "Captain Sinbad",
+      "niche": "productivity",
+      "subscribers": 560000,
+      "videoCount": 193,
+      "totalViews": 17301553,
+      "likeToViewPct": 5.537,
+      "commentToViewPct": 0.4282,
+      "engagementPct": 5.965
+    },
+    {
+      "channel": "Nathaniel Drew",
+      "niche": "productivity",
+      "subscribers": 1790000,
+      "videoCount": 197,
+      "totalViews": 116492634,
+      "likeToViewPct": 5.233,
+      "commentToViewPct": 0.3459,
+      "engagementPct": 5.579
+    },
+    {
+      "channel": "Dr. Berg - официальный русскоязычный канал",
+      "niche": "health",
+      "subscribers": 7240000,
+      "videoCount": 156,
+      "totalViews": 12657050,
+      "likeToViewPct": 5.157,
+      "commentToViewPct": 0.2657,
+      "engagementPct": 5.423
+    },
+    {
+      "channel": "Vanessa Lau",
+      "niche": "creator",
+      "subscribers": 998000,
+      "videoCount": 71,
+      "totalViews": 10471017,
+      "likeToViewPct": 4.988,
+      "commentToViewPct": 0.3699,
+      "engagementPct": 5.358
+    },
+    {
+      "channel": "Leila Hormozi",
+      "niche": "business",
+      "subscribers": 1490000,
+      "videoCount": 12,
+      "totalViews": 2241255,
+      "likeToViewPct": 4.891,
+      "commentToViewPct": 0.1434,
+      "engagementPct": 5.034
+    },
+    {
+      "channel": "The School of Life",
+      "niche": "self-development",
+      "subscribers": 9610000,
+      "videoCount": 106,
+      "totalViews": 29125592,
+      "likeToViewPct": 4.733,
+      "commentToViewPct": 0.1632,
+      "engagementPct": 4.896
+    },
+    {
+      "channel": "Alex Hormozi",
+      "niche": "business",
+      "subscribers": 4040000,
+      "videoCount": 21,
+      "totalViews": 4182986,
+      "likeToViewPct": 4.692,
+      "commentToViewPct": 0.0983,
+      "engagementPct": 4.79
+    },
+    {
+      "channel": "Elizabeth Filips",
+      "niche": "productivity",
+      "subscribers": 985000,
+      "videoCount": 130,
+      "totalViews": 45764538,
+      "likeToViewPct": 4.419,
+      "commentToViewPct": 0.1657,
+      "engagementPct": 4.585
+    },
+    {
+      "channel": "Film Booth",
+      "niche": "creator",
+      "subscribers": 374000,
+      "videoCount": 172,
+      "totalViews": 24418342,
+      "likeToViewPct": 4.195,
+      "commentToViewPct": 0.262,
+      "engagementPct": 4.457
+    },
+    {
+      "channel": "Simon Squibb",
+      "niche": "business",
+      "subscribers": 2240000,
+      "videoCount": 24,
+      "totalViews": 7764381,
+      "likeToViewPct": 4.323,
+      "commentToViewPct": 0.1091,
+      "engagementPct": 4.432
+    },
+    {
+      "channel": "Matt D'Avella",
+      "niche": "productivity",
+      "subscribers": 4020000,
+      "videoCount": 176,
+      "totalViews": 196987635,
+      "likeToViewPct": 4.156,
+      "commentToViewPct": 0.1872,
+      "engagementPct": 4.344
+    },
+    {
+      "channel": "Ryan Holiday",
+      "niche": "self-development",
+      "subscribers": 149000,
+      "videoCount": 88,
+      "totalViews": 3588946,
+      "likeToViewPct": 4.04,
+      "commentToViewPct": 0.1045,
+      "engagementPct": 4.144
+    },
+    {
+      "channel": "Codie Sanchez",
+      "niche": "business",
+      "subscribers": 2110000,
+      "videoCount": 39,
+      "totalViews": 11180347,
+      "likeToViewPct": 3.813,
+      "commentToViewPct": 0.176,
+      "engagementPct": 3.989
+    },
+    {
+      "channel": "Linus Tech Tips",
+      "niche": "tech",
+      "subscribers": 16800000,
+      "videoCount": 150,
+      "totalViews": 185091255,
+      "likeToViewPct": 3.544,
+      "commentToViewPct": 0.2431,
+      "engagementPct": 3.787
+    },
+    {
+      "channel": "Einzelgänger",
+      "niche": "self-development",
+      "subscribers": 2370000,
+      "videoCount": 172,
+      "totalViews": 155734198,
+      "likeToViewPct": 3.528,
+      "commentToViewPct": 0.1706,
+      "engagementPct": 3.699
+    },
+    {
+      "channel": "Mel Robbins",
+      "niche": "self-development",
+      "subscribers": 5350000,
+      "videoCount": 173,
+      "totalViews": 46257883,
+      "likeToViewPct": 3.448,
+      "commentToViewPct": 0.1248,
+      "engagementPct": 3.573
+    },
+    {
+      "channel": "Valuetainment",
+      "niche": "business",
+      "subscribers": 7140000,
+      "videoCount": 138,
+      "totalViews": 15924917,
+      "likeToViewPct": 2.98,
+      "commentToViewPct": 0.4726,
+      "engagementPct": 3.452
+    },
+    {
+      "channel": "Andrei Jikh",
+      "niche": "business",
+      "subscribers": 3050000,
+      "videoCount": 39,
+      "totalViews": 36540761,
+      "likeToViewPct": 3.107,
+      "commentToViewPct": 0.3261,
+      "engagementPct": 3.433
+    },
+    {
+      "channel": "Thomas Frank",
+      "niche": "productivity",
+      "subscribers": 3010000,
+      "videoCount": 195,
+      "totalViews": 139584297,
+      "likeToViewPct": 3.298,
+      "commentToViewPct": 0.1059,
+      "engagementPct": 3.404
+    },
+    {
+      "channel": "Graham Stephan",
+      "niche": "business",
+      "subscribers": 5150000,
+      "videoCount": 37,
+      "totalViews": 15474621,
+      "likeToViewPct": 2.95,
+      "commentToViewPct": 0.391,
+      "engagementPct": 3.341
+    },
+    {
+      "channel": "Jay Shetty",
+      "niche": "self-development",
+      "subscribers": 4870000,
+      "videoCount": 20,
+      "totalViews": 3290331,
+      "likeToViewPct": 3.238,
+      "commentToViewPct": 0.0986,
+      "engagementPct": 3.337
+    },
+    {
+      "channel": "Jeff Nippard",
+      "niche": "health",
+      "subscribers": 8240000,
+      "videoCount": 72,
+      "totalViews": 343672274,
+      "likeToViewPct": 3.151,
+      "commentToViewPct": 0.0901,
+      "engagementPct": 3.241
+    },
+    {
+      "channel": "Marques Brownlee",
+      "niche": "tech",
+      "subscribers": 20800000,
+      "videoCount": 150,
+      "totalViews": 788758877,
+      "likeToViewPct": 2.881,
+      "commentToViewPct": 0.1701,
+      "engagementPct": 3.051
+    },
+    {
+      "channel": "Johnny Harris",
+      "niche": "education",
+      "subscribers": 7550000,
+      "videoCount": 78,
+      "totalViews": 229785475,
+      "likeToViewPct": 2.639,
+      "commentToViewPct": 0.2468,
+      "engagementPct": 2.886
+    },
+    {
+      "channel": "PolyMatter",
+      "niche": "education",
+      "subscribers": 1930000,
+      "videoCount": 173,
+      "totalViews": 236520553,
+      "likeToViewPct": 2.559,
+      "commentToViewPct": 0.2263,
+      "engagementPct": 2.786
+    },
+    {
+      "channel": "Jenny Hoyos",
+      "niche": "creator",
+      "subscribers": 11000000,
+      "videoCount": 8,
+      "totalViews": 3554760,
+      "likeToViewPct": 2.59,
+      "commentToViewPct": 0.1469,
+      "engagementPct": 2.737
+    },
+    {
+      "channel": "Colin and Samir",
+      "niche": "creator",
+      "subscribers": 1620000,
+      "videoCount": 120,
+      "totalViews": 84456235,
+      "likeToViewPct": 2.564,
+      "commentToViewPct": 0.1402,
+      "engagementPct": 2.704
+    },
+    {
+      "channel": "Veritasium",
+      "niche": "education",
+      "subscribers": 20400000,
+      "videoCount": 164,
+      "totalViews": 2168286258,
+      "likeToViewPct": 2.475,
+      "commentToViewPct": 0.134,
+      "engagementPct": 2.609
+    },
+    {
+      "channel": "Jeff Su",
+      "niche": "productivity",
+      "subscribers": 1640000,
+      "videoCount": 94,
+      "totalViews": 49943296,
+      "likeToViewPct": 2.476,
+      "commentToViewPct": 0.1049,
+      "engagementPct": 2.58
+    },
+    {
+      "channel": "Andrew Huberman",
+      "niche": "self-development",
+      "subscribers": 7410000,
+      "videoCount": 151,
+      "totalViews": 53867794,
+      "likeToViewPct": 2.342,
+      "commentToViewPct": 0.1369,
+      "engagementPct": 2.479
+    },
+    {
+      "channel": "My First Million",
+      "niche": "business",
+      "subscribers": 884000,
+      "videoCount": 55,
+      "totalViews": 3628085,
+      "likeToViewPct": 2.151,
+      "commentToViewPct": 0.2388,
+      "engagementPct": 2.389
+    },
+    {
+      "channel": "Mike Shake",
+      "niche": "productivity",
+      "subscribers": 4800000,
+      "videoCount": 114,
+      "totalViews": 537870298,
+      "likeToViewPct": 2.245,
+      "commentToViewPct": 0.0767,
+      "engagementPct": 2.321
+    },
+    {
+      "channel": "Kristian Mock",
+      "niche": "self-development",
+      "subscribers": 407,
+      "videoCount": 15,
+      "totalViews": 2320,
+      "likeToViewPct": 1.034,
+      "commentToViewPct": 0.5172,
+      "engagementPct": 1.552
+    },
+    {
+      "channel": "Sam Sulek",
+      "niche": "health",
+      "subscribers": 685,
+      "videoCount": 4,
+      "totalViews": 5527,
+      "likeToViewPct": 0.597,
+      "commentToViewPct": 0.0543,
+      "engagementPct": 0.651
+    }
+  ],
+  "correlationAnalysis": {
+    "pearsonCorrelation": 0.3215,
+    "interpretation": "Moderate positive — likes and comments tend to move together",
+    "quartileBreakdown": [
+      {
+        "label": "Bottom 25% likes",
+        "count": 879,
+        "avgLikeRate": "2.156%",
+        "avgCommentRate": "0.1873%"
+      },
+      {
+        "label": "25–50% likes",
+        "count": 879,
+        "avgLikeRate": "3.173%",
+        "avgCommentRate": "0.2238%"
+      },
+      {
+        "label": "50–75% likes",
+        "count": 879,
+        "avgLikeRate": "4.272%",
+        "avgCommentRate": "0.2737%"
+      },
+      {
+        "label": "Top 25% likes",
+        "count": 882,
+        "avgLikeRate": "6.203%",
+        "avgCommentRate": "0.3829%"
+      }
+    ]
+  }
+}

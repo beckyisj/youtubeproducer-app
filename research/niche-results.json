@@ -1,0 +1,2491 @@
+{
+  "self-development": {
+    "overview": {
+      "channelCount": 8,
+      "totalVideosAnalyzed": 726,
+      "averageChannelAgeYears": 13.4,
+      "averageSubscribers": 3719991,
+      "medianSubscribers": 3620000,
+      "totalSubscribersAcrossNiche": 29759926
+    },
+    "optimalLength": {
+      "bestBucket": "10-15 min",
+      "bestNormalizedViews": 0.604,
+      "allBuckets": [
+        {
+          "bucket": "10-15 min",
+          "videoCount": 112,
+          "medianViews": 476858,
+          "avgNormalizedViews": 0.604
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 54,
+          "medianViews": 302494,
+          "avgNormalizedViews": 0.314
+        },
+        {
+          "bucket": "20-30 min",
+          "videoCount": 23,
+          "medianViews": 239805,
+          "avgNormalizedViews": 0.199
+        },
+        {
+          "bucket": "5-10 min",
+          "videoCount": 49,
+          "medianViews": 159436,
+          "avgNormalizedViews": 0.143
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 221,
+          "medianViews": 54828,
+          "avgNormalizedViews": 0.102
+        },
+        {
+          "bucket": "60+ min",
+          "videoCount": 121,
+          "medianViews": 381579,
+          "avgNormalizedViews": 0.08
+        },
+        {
+          "bucket": "30-60 min",
+          "videoCount": 80,
+          "medianViews": 193802,
+          "avgNormalizedViews": 0.046
+        },
+        {
+          "bucket": "3-5 min",
+          "videoCount": 66,
+          "medianViews": 179660,
+          "avgNormalizedViews": 0.037
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 4,
+        "medianViews": 25339,
+        "avgNormalizedViews": 4.84,
+        "percentOfVideos": 0.6
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 18,
+        "medianViews": 225482,
+        "avgNormalizedViews": 1.32,
+        "percentOfVideos": 2.5
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 110,
+        "medianViews": 332804,
+        "avgNormalizedViews": 0.296,
+        "percentOfVideos": 15.2
+      },
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 10,
+        "medianViews": 464834,
+        "avgNormalizedViews": 0.248,
+        "percentOfVideos": 1.4
+      },
+      {
+        "pattern": "Review",
+        "videoCount": 2,
+        "medianViews": 412616,
+        "avgNormalizedViews": 0.241,
+        "percentOfVideos": 0.3
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 430,
+        "medianViews": 147569,
+        "avgNormalizedViews": 0.191,
+        "percentOfVideos": 59.2
+      },
+      {
+        "pattern": "Guide/Explainer",
+        "videoCount": 6,
+        "medianViews": 383540,
+        "avgNormalizedViews": 0.18,
+        "percentOfVideos": 0.8
+      },
+      {
+        "pattern": "Why/Explanation",
+        "videoCount": 46,
+        "medianViews": 160445,
+        "avgNormalizedViews": 0.169,
+        "percentOfVideos": 6.3
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 42,
+        "medianViews": 119134,
+        "avgNormalizedViews": 0.137,
+        "percentOfVideos": 5.8
+      },
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 22,
+        "medianViews": 238964,
+        "avgNormalizedViews": 0.136,
+        "percentOfVideos": 3
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 10,
+        "medianViews": 76540,
+        "avgNormalizedViews": 0.093,
+        "percentOfVideos": 1.4
+      },
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 3,
+        "medianViews": 195446,
+        "avgNormalizedViews": 0.062,
+        "percentOfVideos": 0.4
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 78,
+        "medianViews": 194180,
+        "avgNormalizedViews": 0.047,
+        "percentOfVideos": 10.7
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 9.32,
+      "medianUploadsPerMonth": 3.64,
+      "frequencyGrowthCorrelation": "negative",
+      "channelBreakdown": [
+        {
+          "name": "James Clear",
+          "uploadsPerMonth": 0
+        },
+        {
+          "name": "Jay Shetty",
+          "uploadsPerMonth": 1.42
+        },
+        {
+          "name": "Mel Robbins",
+          "uploadsPerMonth": 27.79
+        },
+        {
+          "name": "Kristian Mock",
+          "uploadsPerMonth": 0.16
+        },
+        {
+          "name": "Einzelgänger",
+          "uploadsPerMonth": 2.54
+        },
+        {
+          "name": "Ryan Holiday",
+          "uploadsPerMonth": 28.64
+        },
+        {
+          "name": "Andrew Huberman",
+          "uploadsPerMonth": 9.25
+        },
+        {
+          "name": "The School of Life",
+          "uploadsPerMonth": 4.73
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.0391,
+      "avgCommentRatio": 0.00193,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "0.99x",
+      "commentRatioVsGlobal": "0.72x"
+    },
+    "topChannels": [
+      {
+        "name": "The School of Life",
+        "handle": "@SchoolOfLifeChannel",
+        "subscribers": 9610000,
+        "totalViews": 980782190,
+        "totalVideos": 1161,
+        "avgViewsPerVideo": 844774,
+        "subsPerVideo": 8277,
+        "channelAgeYears": 15.8
+      },
+      {
+        "name": "Andrew Huberman",
+        "handle": "@hubermanlab",
+        "subscribers": 7410000,
+        "totalViews": 485504002,
+        "totalVideos": 466,
+        "avgViewsPerVideo": 1041854,
+        "subsPerVideo": 15901,
+        "channelAgeYears": 12.9
+      },
+      {
+        "name": "Mel Robbins",
+        "handle": "@melrobbins",
+        "subscribers": 5350000,
+        "totalViews": 337123049,
+        "totalVideos": 1291,
+        "avgViewsPerVideo": 261133,
+        "subsPerVideo": 4144,
+        "channelAgeYears": 11.1
+      },
+      {
+        "name": "Jay Shetty",
+        "handle": "@JayShetty",
+        "subscribers": 4870000,
+        "totalViews": 344891445,
+        "totalVideos": 1222,
+        "avgViewsPerVideo": 282235,
+        "subsPerVideo": 3985,
+        "channelAgeYears": 12.5
+      },
+      {
+        "name": "Einzelgänger",
+        "handle": "@Einzelganger",
+        "subscribers": 2370000,
+        "totalViews": 246469452,
+        "totalVideos": 330,
+        "avgViewsPerVideo": 746877,
+        "subsPerVideo": 7182,
+        "channelAgeYears": 7.3
+      },
+      {
+        "name": "Ryan Holiday",
+        "handle": "@RyanHolidayofficial",
+        "subscribers": 149000,
+        "totalViews": 14786465,
+        "totalVideos": 874,
+        "avgViewsPerVideo": 16918,
+        "subsPerVideo": 170,
+        "channelAgeYears": 14.4
+      },
+      {
+        "name": "James Clear",
+        "handle": "@JamesClear",
+        "subscribers": 519,
+        "totalViews": 29234,
+        "totalVideos": 5,
+        "avgViewsPerVideo": 5847,
+        "subsPerVideo": 104,
+        "channelAgeYears": 16.7
+      },
+      {
+        "name": "Kristian Mock",
+        "handle": "@TheSchoolofLife",
+        "subscribers": 407,
+        "totalViews": 2554,
+        "totalVideos": 17,
+        "avgViewsPerVideo": 150,
+        "subsPerVideo": 24,
+        "channelAgeYears": 16.1
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "Become a Writer Challenge: How to Start a Blog in 10 Minutes",
+        "channelName": "James Clear",
+        "channelHandle": "@JamesClear",
+        "views": 10010,
+        "normalizedViews": 19.287,
+        "likes": 134,
+        "comments": 4,
+        "durationSec": 737,
+        "publishedAt": "2013-11-05T14:50:34Z"
+      },
+      {
+        "title": "Give me 16 minutes and I'll teach you how to read like a PRO",
+        "channelName": "Ryan Holiday",
+        "channelHandle": "@RyanHolidayofficial",
+        "views": 532692,
+        "normalizedViews": 3.575,
+        "likes": 24374,
+        "comments": 946,
+        "durationSec": 971,
+        "publishedAt": "2026-01-08T01:30:28Z"
+      },
+      {
+        "title": "Stop Trying to Get It And You'll Have It | The Backwards Law",
+        "channelName": "Einzelgänger",
+        "channelHandle": "@Einzelganger",
+        "views": 5688520,
+        "normalizedViews": 2.4,
+        "likes": 210380,
+        "comments": 7276,
+        "durationSec": 684,
+        "publishedAt": "2021-03-11T15:00:06Z"
+      },
+      {
+        "title": "Sun Tzu | The Art of War",
+        "channelName": "Einzelgänger",
+        "channelHandle": "@Einzelganger",
+        "views": 5487947,
+        "normalizedViews": 2.316,
+        "likes": 155323,
+        "comments": 10523,
+        "durationSec": 696,
+        "publishedAt": "2020-07-23T18:00:00Z"
+      },
+      {
+        "title": "The Best Books You Can Read",
+        "channelName": "Ryan Holiday",
+        "channelHandle": "@RyanHolidayofficial",
+        "views": 328804,
+        "normalizedViews": 2.207,
+        "likes": 10384,
+        "comments": 271,
+        "durationSec": 499,
+        "publishedAt": "2025-12-06T15:01:22Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 299033,
+      "fastestGrower": {
+        "name": "The School of Life",
+        "subsPerYear": 607770,
+        "ageYears": 15.8
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Andrew Huberman",
+        "subsPerVideo": 15901
+      },
+      "channelGrowth": [
+        {
+          "name": "The School of Life",
+          "handle": "@SchoolOfLifeChannel",
+          "subscribers": 9610000,
+          "ageYears": 15.811911647273558,
+          "subsPerYear": 607770,
+          "subsPerVideo": 8277
+        },
+        {
+          "name": "Andrew Huberman",
+          "handle": "@hubermanlab",
+          "subscribers": 7410000,
+          "ageYears": 12.88538748193779,
+          "subsPerYear": 575070,
+          "subsPerVideo": 15901
+        },
+        {
+          "name": "Mel Robbins",
+          "handle": "@melrobbins",
+          "subscribers": 5350000,
+          "ageYears": 11.074800935432352,
+          "subsPerYear": 483079,
+          "subsPerVideo": 4144
+        },
+        {
+          "name": "Jay Shetty",
+          "handle": "@JayShetty",
+          "subscribers": 4870000,
+          "ageYears": 12.471902996425584,
+          "subsPerYear": 390478,
+          "subsPerVideo": 3985
+        },
+        {
+          "name": "Einzelgänger",
+          "handle": "@Einzelganger",
+          "subscribers": 2370000,
+          "ageYears": 7.281647495373539,
+          "subsPerYear": 325476,
+          "subsPerVideo": 7182
+        },
+        {
+          "name": "Ryan Holiday",
+          "handle": "@RyanHolidayofficial",
+          "subscribers": 149000,
+          "ageYears": 14.413062463558699,
+          "subsPerYear": 10338,
+          "subsPerVideo": 170
+        },
+        {
+          "name": "James Clear",
+          "handle": "@JamesClear",
+          "subscribers": 519,
+          "ageYears": 16.739733344741044,
+          "subsPerYear": 31,
+          "subsPerVideo": 104
+        },
+        {
+          "name": "Kristian Mock",
+          "handle": "@TheSchoolofLife",
+          "subscribers": 407,
+          "ageYears": 16.135766027834816,
+          "subsPerYear": 25,
+          "subsPerVideo": 24
+        }
+      ]
+    }
+  },
+  "business": {
+    "overview": {
+      "channelCount": 8,
+      "totalVideosAnalyzed": 365,
+      "averageChannelAgeYears": 11.1,
+      "averageSubscribers": 3263000,
+      "medianSubscribers": 2645000,
+      "totalSubscribersAcrossNiche": 26104000
+    },
+    "optimalLength": {
+      "bestBucket": "20-30 min",
+      "bestNormalizedViews": 0.234,
+      "allBuckets": [
+        {
+          "bucket": "20-30 min",
+          "videoCount": 43,
+          "medianViews": 396775,
+          "avgNormalizedViews": 0.234
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 73,
+          "medianViews": 304972,
+          "avgNormalizedViews": 0.114
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 36,
+          "medianViews": 116432,
+          "avgNormalizedViews": 0.114
+        },
+        {
+          "bucket": "10-15 min",
+          "videoCount": 91,
+          "medianViews": 146994,
+          "avgNormalizedViews": 0.064
+        },
+        {
+          "bucket": "60+ min",
+          "videoCount": 32,
+          "medianViews": 42625,
+          "avgNormalizedViews": 0.056
+        },
+        {
+          "bucket": "30-60 min",
+          "videoCount": 31,
+          "medianViews": 51923,
+          "avgNormalizedViews": 0.053
+        },
+        {
+          "bucket": "5-10 min",
+          "videoCount": 50,
+          "medianViews": 52551,
+          "avgNormalizedViews": 0.018
+        },
+        {
+          "bucket": "3-5 min",
+          "videoCount": 9,
+          "medianViews": 9695,
+          "avgNormalizedViews": 0.001
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Why/Explanation",
+        "videoCount": 10,
+        "medianViews": 336012,
+        "avgNormalizedViews": 0.133,
+        "percentOfVideos": 2.7
+      },
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 4,
+        "medianViews": 46539,
+        "avgNormalizedViews": 0.13,
+        "percentOfVideos": 1.1
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 20,
+        "medianViews": 186971,
+        "avgNormalizedViews": 0.125,
+        "percentOfVideos": 5.5
+      },
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 78,
+        "medianViews": 127394,
+        "avgNormalizedViews": 0.114,
+        "percentOfVideos": 21.4
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 22,
+        "medianViews": 107013,
+        "avgNormalizedViews": 0.108,
+        "percentOfVideos": 6
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 12,
+        "medianViews": 85253,
+        "avgNormalizedViews": 0.101,
+        "percentOfVideos": 3.3
+      },
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 11,
+        "medianViews": 62789,
+        "avgNormalizedViews": 0.086,
+        "percentOfVideos": 3
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 208,
+        "medianViews": 119961,
+        "avgNormalizedViews": 0.084,
+        "percentOfVideos": 57
+      },
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 2,
+        "medianViews": 336033,
+        "avgNormalizedViews": 0.064,
+        "percentOfVideos": 0.5
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 25,
+        "medianViews": 107379,
+        "avgNormalizedViews": 0.056,
+        "percentOfVideos": 6.8
+      },
+      {
+        "pattern": "Review",
+        "videoCount": 1,
+        "medianViews": 56030,
+        "avgNormalizedViews": 0.027,
+        "percentOfVideos": 0.3
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 10,
+        "medianViews": 14085,
+        "avgNormalizedViews": 0.006,
+        "percentOfVideos": 2.7
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 32.31,
+      "medianUploadsPerMonth": 5.77,
+      "frequencyGrowthCorrelation": "positive",
+      "channelBreakdown": [
+        {
+          "name": "Graham Stephan",
+          "uploadsPerMonth": 5.55
+        },
+        {
+          "name": "Andrei Jikh",
+          "uploadsPerMonth": 4.97
+        },
+        {
+          "name": "Codie Sanchez",
+          "uploadsPerMonth": 4.85
+        },
+        {
+          "name": "Alex Hormozi",
+          "uploadsPerMonth": 16.16
+        },
+        {
+          "name": "Leila Hormozi",
+          "uploadsPerMonth": 4.35
+        },
+        {
+          "name": "Valuetainment",
+          "uploadsPerMonth": 205.96
+        },
+        {
+          "name": "My First Million",
+          "uploadsPerMonth": 10.66
+        },
+        {
+          "name": "Simon Squibb",
+          "uploadsPerMonth": 5.99
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.03161,
+      "avgCommentRatio": 0.00377,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "0.8x",
+      "commentRatioVsGlobal": "1.4x"
+    },
+    "topChannels": [
+      {
+        "name": "Valuetainment",
+        "handle": "@patrickbetdavid",
+        "subscribers": 7140000,
+        "totalViews": 3318312926,
+        "totalVideos": 11193,
+        "avgViewsPerVideo": 296463,
+        "subsPerVideo": 638,
+        "channelAgeYears": 13.3
+      },
+      {
+        "name": "Graham Stephan",
+        "handle": "@GrahamStephan",
+        "subscribers": 5150000,
+        "totalViews": 1367463704,
+        "totalVideos": 1455,
+        "avgViewsPerVideo": 939838,
+        "subsPerVideo": 3540,
+        "channelAgeYears": 9.2
+      },
+      {
+        "name": "Alex Hormozi",
+        "handle": "@AlexHormozi",
+        "subscribers": 4040000,
+        "totalViews": 926483524,
+        "totalVideos": 4530,
+        "avgViewsPerVideo": 204522,
+        "subsPerVideo": 892,
+        "channelAgeYears": 17.2
+      },
+      {
+        "name": "Andrei Jikh",
+        "handle": "@AndreiJikh",
+        "subscribers": 3050000,
+        "totalViews": 396666039,
+        "totalVideos": 1119,
+        "avgViewsPerVideo": 354483,
+        "subsPerVideo": 2726,
+        "channelAgeYears": 9
+      },
+      {
+        "name": "Simon Squibb",
+        "handle": "@SimonSquibb",
+        "subscribers": 2240000,
+        "totalViews": 411079658,
+        "totalVideos": 1568,
+        "avgViewsPerVideo": 262168,
+        "subsPerVideo": 1429,
+        "channelAgeYears": 14.2
+      },
+      {
+        "name": "Codie Sanchez",
+        "handle": "@CodieSanchezCT",
+        "subscribers": 2110000,
+        "totalViews": 378783800,
+        "totalVideos": 794,
+        "avgViewsPerVideo": 477058,
+        "subsPerVideo": 2657,
+        "channelAgeYears": 9.9
+      },
+      {
+        "name": "Leila Hormozi",
+        "handle": "@LeilaHormozi",
+        "subscribers": 1490000,
+        "totalViews": 204691622,
+        "totalVideos": 3354,
+        "avgViewsPerVideo": 61029,
+        "subsPerVideo": 444,
+        "channelAgeYears": 4.7
+      },
+      {
+        "name": "My First Million",
+        "handle": "@MyFirstMillionPod",
+        "subscribers": 884000,
+        "totalViews": 312041786,
+        "totalVideos": 1930,
+        "avgViewsPerVideo": 161680,
+        "subsPerVideo": 458,
+        "channelAgeYears": 11.1
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "This is what REAL love looks like… 🥹",
+        "channelName": "Simon Squibb",
+        "channelHandle": "@SimonSquibb",
+        "views": 4953824,
+        "normalizedViews": 2.212,
+        "likes": 236210,
+        "comments": 3896,
+        "durationSec": 97,
+        "publishedAt": "2026-01-08T20:33:40Z"
+      },
+      {
+        "title": "Russia Says U.S. Planning $37 Trillion Crypto Reset",
+        "channelName": "Andrei Jikh",
+        "channelHandle": "@AndreiJikh",
+        "views": 4459357,
+        "normalizedViews": 1.462,
+        "likes": 112008,
+        "comments": 8649,
+        "durationSec": 1102,
+        "publishedAt": "2025-09-22T19:00:41Z"
+      },
+      {
+        "title": "China Is Using Gold To Replace the U.S. Dollar",
+        "channelName": "Andrei Jikh",
+        "channelHandle": "@AndreiJikh",
+        "views": 3469855,
+        "normalizedViews": 1.138,
+        "likes": 89967,
+        "comments": 8946,
+        "durationSec": 1392,
+        "publishedAt": "2025-10-20T19:00:03Z"
+      },
+      {
+        "title": "The Start Of A New World Order",
+        "channelName": "Andrei Jikh",
+        "channelHandle": "@AndreiJikh",
+        "views": 3130859,
+        "normalizedViews": 1.027,
+        "likes": 96127,
+        "comments": 9304,
+        "durationSec": 1467,
+        "publishedAt": "2026-01-27T00:15:25Z"
+      },
+      {
+        "title": "The Next World Reserve Currency",
+        "channelName": "Andrei Jikh",
+        "channelHandle": "@AndreiJikh",
+        "views": 1559348,
+        "normalizedViews": 0.511,
+        "likes": 40777,
+        "comments": 6450,
+        "durationSec": 1505,
+        "publishedAt": "2026-02-02T17:35:20Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 304645,
+      "fastestGrower": {
+        "name": "Graham Stephan",
+        "subsPerYear": 559387,
+        "ageYears": 9.2
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Graham Stephan",
+        "subsPerVideo": 3540
+      },
+      "channelGrowth": [
+        {
+          "name": "Graham Stephan",
+          "handle": "@GrahamStephan",
+          "subscribers": 5150000,
+          "ageYears": 9.206500621086521,
+          "subsPerYear": 559387,
+          "subsPerVideo": 3540
+        },
+        {
+          "name": "Valuetainment",
+          "handle": "@patrickbetdavid",
+          "subscribers": 7140000,
+          "ageYears": 13.330395657464447,
+          "subsPerYear": 535618,
+          "subsPerVideo": 638
+        },
+        {
+          "name": "Andrei Jikh",
+          "handle": "@AndreiJikh",
+          "subscribers": 3050000,
+          "ageYears": 8.963640390904251,
+          "subsPerYear": 340264,
+          "subsPerVideo": 2726
+        },
+        {
+          "name": "Leila Hormozi",
+          "handle": "@LeilaHormozi",
+          "subscribers": 1490000,
+          "ageYears": 4.7037418426939945,
+          "subsPerYear": 316769,
+          "subsPerVideo": 444
+        },
+        {
+          "name": "Alex Hormozi",
+          "handle": "@AlexHormozi",
+          "subscribers": 4040000,
+          "ageYears": 17.180579163180976,
+          "subsPerYear": 235149,
+          "subsPerVideo": 892
+        },
+        {
+          "name": "Codie Sanchez",
+          "handle": "@CodieSanchezCT",
+          "subscribers": 2110000,
+          "ageYears": 9.90626362587776,
+          "subsPerYear": 212997,
+          "subsPerVideo": 2657
+        },
+        {
+          "name": "Simon Squibb",
+          "handle": "@SimonSquibb",
+          "subscribers": 2240000,
+          "ageYears": 14.22482359241514,
+          "subsPerYear": 157471,
+          "subsPerVideo": 1429
+        },
+        {
+          "name": "My First Million",
+          "handle": "@MyFirstMillionPod",
+          "subscribers": 884000,
+          "ageYears": 11.118716917636322,
+          "subsPerYear": 79506,
+          "subsPerVideo": 458
+        }
+      ]
+    }
+  },
+  "creator": {
+    "overview": {
+      "channelCount": 5,
+      "totalVideosAnalyzed": 371,
+      "averageChannelAgeYears": 11.3,
+      "averageSubscribers": 2798413,
+      "medianSubscribers": 998000,
+      "totalSubscribersAcrossNiche": 13992067
+    },
+    "optimalLength": {
+      "bestBucket": "10-15 min",
+      "bestNormalizedViews": 0.701,
+      "allBuckets": [
+        {
+          "bucket": "10-15 min",
+          "videoCount": 33,
+          "medianViews": 80700,
+          "avgNormalizedViews": 0.701
+        },
+        {
+          "bucket": "60+ min",
+          "videoCount": 69,
+          "medianViews": 458052,
+          "avgNormalizedViews": 0.458
+        },
+        {
+          "bucket": "5-10 min",
+          "videoCount": 89,
+          "medianViews": 40969,
+          "avgNormalizedViews": 0.363
+        },
+        {
+          "bucket": "30-60 min",
+          "videoCount": 56,
+          "medianViews": 132028,
+          "avgNormalizedViews": 0.345
+        },
+        {
+          "bucket": "20-30 min",
+          "videoCount": 44,
+          "medianViews": 166757,
+          "avgNormalizedViews": 0.254
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 14,
+          "medianViews": 128988,
+          "avgNormalizedViews": 0.209
+        },
+        {
+          "bucket": "3-5 min",
+          "videoCount": 30,
+          "medianViews": 21667,
+          "avgNormalizedViews": 0.202
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 36,
+          "medianViews": 14062,
+          "avgNormalizedViews": 0.046
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 13,
+        "medianViews": 80279,
+        "avgNormalizedViews": 0.683,
+        "percentOfVideos": 3.5
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 15,
+        "medianViews": 161875,
+        "avgNormalizedViews": 0.659,
+        "percentOfVideos": 4
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 179,
+        "medianViews": 217224,
+        "avgNormalizedViews": 0.488,
+        "percentOfVideos": 48.2
+      },
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 14,
+        "medianViews": 171844,
+        "avgNormalizedViews": 0.356,
+        "percentOfVideos": 3.8
+      },
+      {
+        "pattern": "Why/Explanation",
+        "videoCount": 12,
+        "medianViews": 155706,
+        "avgNormalizedViews": 0.273,
+        "percentOfVideos": 3.2
+      },
+      {
+        "pattern": "Guide/Explainer",
+        "videoCount": 3,
+        "medianViews": 30448,
+        "avgNormalizedViews": 0.232,
+        "percentOfVideos": 0.8
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 85,
+        "medianViews": 36059,
+        "avgNormalizedViews": 0.179,
+        "percentOfVideos": 22.9
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 7,
+        "medianViews": 131063,
+        "avgNormalizedViews": 0.155,
+        "percentOfVideos": 1.9
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 44,
+        "medianViews": 23515,
+        "avgNormalizedViews": 0.136,
+        "percentOfVideos": 11.9
+      },
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 14,
+        "medianViews": 15636,
+        "avgNormalizedViews": 0.12,
+        "percentOfVideos": 3.8
+      },
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 9,
+        "medianViews": 3194,
+        "avgNormalizedViews": 0.08,
+        "percentOfVideos": 2.4
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 1,
+        "medianViews": 90311,
+        "avgNormalizedViews": 0.056,
+        "percentOfVideos": 0.3
+      },
+      {
+        "pattern": "Review",
+        "videoCount": 12,
+        "medianViews": 4903,
+        "avgNormalizedViews": 0.038,
+        "percentOfVideos": 3.2
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 8.26,
+      "medianUploadsPerMonth": 2.49,
+      "frequencyGrowthCorrelation": "positive",
+      "channelBreakdown": [
+        {
+          "name": "Colin and Samir",
+          "uploadsPerMonth": 2.49
+        },
+        {
+          "name": "Film Booth",
+          "uploadsPerMonth": 3.07
+        },
+        {
+          "name": "thinkmedia",
+          "uploadsPerMonth": 0
+        },
+        {
+          "name": "Vanessa Lau",
+          "uploadsPerMonth": 1.9
+        },
+        {
+          "name": "Jenny Hoyos",
+          "uploadsPerMonth": 33.84
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.03783,
+      "avgCommentRatio": 0.00403,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "0.96x",
+      "commentRatioVsGlobal": "1.5x"
+    },
+    "topChannels": [
+      {
+        "name": "Jenny Hoyos",
+        "handle": "@JennyHoyos",
+        "subscribers": 11000000,
+        "totalViews": 6482679151,
+        "totalVideos": 2373,
+        "avgViewsPerVideo": 2731850,
+        "subsPerVideo": 4635,
+        "channelAgeYears": 4.6
+      },
+      {
+        "name": "Colin and Samir",
+        "handle": "@ColinandSamir",
+        "subscribers": 1620000,
+        "totalViews": 452309983,
+        "totalVideos": 481,
+        "avgViewsPerVideo": 940353,
+        "subsPerVideo": 3368,
+        "channelAgeYears": 9.5
+      },
+      {
+        "name": "Vanessa Lau",
+        "handle": "@vanessalau",
+        "subscribers": 998000,
+        "totalViews": 50085486,
+        "totalVideos": 532,
+        "avgViewsPerVideo": 94146,
+        "subsPerVideo": 1876,
+        "channelAgeYears": 12.1
+      },
+      {
+        "name": "Film Booth",
+        "handle": "@FilmBooth",
+        "subscribers": 374000,
+        "totalViews": 27172204,
+        "totalVideos": 239,
+        "avgViewsPerVideo": 113691,
+        "subsPerVideo": 1565,
+        "channelAgeYears": 10.8
+      },
+      {
+        "name": "thinkmedia",
+        "handle": "@ThinkMedia",
+        "subscribers": 67,
+        "totalViews": 680,
+        "totalVideos": 4,
+        "avgViewsPerVideo": 170,
+        "subsPerVideo": 17,
+        "channelAgeYears": 19.6
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "I got MONETIZED as fast as I could - HERE'S HOW",
+        "channelName": "Film Booth",
+        "channelHandle": "@FilmBooth",
+        "views": 2758776,
+        "normalizedViews": 7.376,
+        "likes": 95123,
+        "comments": 4392,
+        "durationSec": 667,
+        "publishedAt": "2021-06-16T13:00:16Z"
+      },
+      {
+        "title": "24 hours with MrBeast",
+        "channelName": "Colin and Samir",
+        "channelHandle": "@ColinandSamir",
+        "views": 10963587,
+        "normalizedViews": 6.768,
+        "likes": 369669,
+        "comments": 13756,
+        "durationSec": 2292,
+        "publishedAt": "2022-11-13T21:06:32Z"
+      },
+      {
+        "title": "A Brutally Honest Conversation with MrBeast",
+        "channelName": "Colin and Samir",
+        "channelHandle": "@ColinandSamir",
+        "views": 8591141,
+        "normalizedViews": 5.303,
+        "likes": 132842,
+        "comments": 21346,
+        "durationSec": 7574,
+        "publishedAt": "2023-06-27T21:34:15Z"
+      },
+      {
+        "title": "The Silent Hack YouTubers Use To Hook You",
+        "channelName": "Film Booth",
+        "channelHandle": "@FilmBooth",
+        "views": 1762591,
+        "normalizedViews": 4.713,
+        "likes": 76819,
+        "comments": 2093,
+        "durationSec": 453,
+        "publishedAt": "2022-03-23T14:46:35Z"
+      },
+      {
+        "title": "I became a millionaire at 26. Here's 13 lessons for anyone in their 20s.",
+        "channelName": "Vanessa Lau",
+        "channelHandle": "@vanessalau",
+        "views": 3696429,
+        "normalizedViews": 3.704,
+        "likes": 207022,
+        "comments": 5713,
+        "durationSec": 1585,
+        "publishedAt": "2024-05-06T14:07:06Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 538282,
+      "fastestGrower": {
+        "name": "Jenny Hoyos",
+        "subsPerYear": 2403716,
+        "ageYears": 4.6
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Jenny Hoyos",
+        "subsPerVideo": 4635
+      },
+      "channelGrowth": [
+        {
+          "name": "Jenny Hoyos",
+          "handle": "@JennyHoyos",
+          "subscribers": 11000000,
+          "ageYears": 4.57624826361954,
+          "subsPerYear": 2403716,
+          "subsPerVideo": 4635
+        },
+        {
+          "name": "Colin and Samir",
+          "handle": "@ColinandSamir",
+          "subscribers": 1620000,
+          "ageYears": 9.506134433543743,
+          "subsPerYear": 170416,
+          "subsPerVideo": 3368
+        },
+        {
+          "name": "Vanessa Lau",
+          "handle": "@vanessalau",
+          "subscribers": 998000,
+          "ageYears": 12.080850951910158,
+          "subsPerYear": 82610,
+          "subsPerVideo": 1876
+        },
+        {
+          "name": "Film Booth",
+          "handle": "@FilmBooth",
+          "subscribers": 374000,
+          "ageYears": 10.788385238421172,
+          "subsPerYear": 34667,
+          "subsPerVideo": 1565
+        },
+        {
+          "name": "thinkmedia",
+          "handle": "@ThinkMedia",
+          "subscribers": 67,
+          "ageYears": 19.605233921464244,
+          "subsPerYear": 3,
+          "subsPerVideo": 17
+        }
+      ]
+    }
+  },
+  "productivity": {
+    "overview": {
+      "channelCount": 7,
+      "totalVideosAnalyzed": 1099,
+      "averageChannelAgeYears": 11.3,
+      "averageSubscribers": 2400714,
+      "medianSubscribers": 1790000,
+      "totalSubscribersAcrossNiche": 16805000
+    },
+    "optimalLength": {
+      "bestBucket": "20-30 min",
+      "bestNormalizedViews": 0.439,
+      "allBuckets": [
+        {
+          "bucket": "20-30 min",
+          "videoCount": 84,
+          "medianViews": 174551,
+          "avgNormalizedViews": 0.439
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 161,
+          "medianViews": 332879,
+          "avgNormalizedViews": 0.41
+        },
+        {
+          "bucket": "5-10 min",
+          "videoCount": 353,
+          "medianViews": 401287,
+          "avgNormalizedViews": 0.35
+        },
+        {
+          "bucket": "10-15 min",
+          "videoCount": 394,
+          "medianViews": 423140,
+          "avgNormalizedViews": 0.335
+        },
+        {
+          "bucket": "3-5 min",
+          "videoCount": 47,
+          "medianViews": 185227,
+          "avgNormalizedViews": 0.301
+        },
+        {
+          "bucket": "30-60 min",
+          "videoCount": 30,
+          "medianViews": 154183,
+          "avgNormalizedViews": 0.185
+        },
+        {
+          "bucket": "60+ min",
+          "videoCount": 13,
+          "medianViews": 55892,
+          "avgNormalizedViews": 0.096
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 17,
+          "medianViews": 54342,
+          "avgNormalizedViews": 0.043
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Review",
+        "videoCount": 3,
+        "medianViews": 331298,
+        "avgNormalizedViews": 0.75,
+        "percentOfVideos": 0.3
+      },
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 7,
+        "medianViews": 1402866,
+        "avgNormalizedViews": 0.739,
+        "percentOfVideos": 0.6
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 55,
+        "medianViews": 365671,
+        "avgNormalizedViews": 0.688,
+        "percentOfVideos": 5
+      },
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 36,
+        "medianViews": 814130,
+        "avgNormalizedViews": 0.561,
+        "percentOfVideos": 3.3
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 119,
+        "medianViews": 554803,
+        "avgNormalizedViews": 0.514,
+        "percentOfVideos": 10.8
+      },
+      {
+        "pattern": "Guide/Explainer",
+        "videoCount": 15,
+        "medianViews": 374678,
+        "avgNormalizedViews": 0.379,
+        "percentOfVideos": 1.4
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 550,
+        "medianViews": 325696,
+        "avgNormalizedViews": 0.333,
+        "percentOfVideos": 50
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 27,
+        "medianViews": 649241,
+        "avgNormalizedViews": 0.325,
+        "percentOfVideos": 2.5
+      },
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 24,
+        "medianViews": 212035,
+        "avgNormalizedViews": 0.308,
+        "percentOfVideos": 2.2
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 166,
+        "medianViews": 297741,
+        "avgNormalizedViews": 0.265,
+        "percentOfVideos": 15.1
+      },
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 130,
+        "medianViews": 239292,
+        "avgNormalizedViews": 0.243,
+        "percentOfVideos": 11.8
+      },
+      {
+        "pattern": "Why/Explanation",
+        "videoCount": 59,
+        "medianViews": 254880,
+        "avgNormalizedViews": 0.236,
+        "percentOfVideos": 5.4
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 5,
+        "medianViews": 337631,
+        "avgNormalizedViews": 0.127,
+        "percentOfVideos": 0.5
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 2.21,
+      "medianUploadsPerMonth": 2.11,
+      "frequencyGrowthCorrelation": "negative",
+      "channelBreakdown": [
+        {
+          "name": "Thomas Frank",
+          "uploadsPerMonth": 2.08
+        },
+        {
+          "name": "Matt D'Avella",
+          "uploadsPerMonth": 2.11
+        },
+        {
+          "name": "Mike Shake",
+          "uploadsPerMonth": 1.4
+        },
+        {
+          "name": "Elizabeth Filips",
+          "uploadsPerMonth": 2.84
+        },
+        {
+          "name": "Jeff Su",
+          "uploadsPerMonth": 2.12
+        },
+        {
+          "name": "Captain Sinbad",
+          "uploadsPerMonth": 3.27
+        },
+        {
+          "name": "Nathaniel Drew",
+          "uploadsPerMonth": 1.66
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.04523,
+      "avgCommentRatio": 0.00279,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "1.15x",
+      "commentRatioVsGlobal": "1.04x"
+    },
+    "topChannels": [
+      {
+        "name": "Mike Shake",
+        "handle": "@MikeShake",
+        "subscribers": 4800000,
+        "totalViews": 893878483,
+        "totalVideos": 137,
+        "avgViewsPerVideo": 6524660,
+        "subsPerVideo": 35036,
+        "channelAgeYears": 8
+      },
+      {
+        "name": "Matt D'Avella",
+        "handle": "@mattdavella",
+        "subscribers": 4020000,
+        "totalViews": 328612528,
+        "totalVideos": 465,
+        "avgViewsPerVideo": 706694,
+        "subsPerVideo": 8645,
+        "channelAgeYears": 14.6
+      },
+      {
+        "name": "Thomas Frank",
+        "handle": "@Thomasfrank",
+        "subscribers": 3010000,
+        "totalViews": 185834738,
+        "totalVideos": 281,
+        "avgViewsPerVideo": 661334,
+        "subsPerVideo": 10712,
+        "channelAgeYears": 19.3
+      },
+      {
+        "name": "Nathaniel Drew",
+        "handle": "@NathanielDrew",
+        "subscribers": 1790000,
+        "totalViews": 116847752,
+        "totalVideos": 208,
+        "avgViewsPerVideo": 561768,
+        "subsPerVideo": 8606,
+        "channelAgeYears": 10.6
+      },
+      {
+        "name": "Jeff Su",
+        "handle": "@jeffsu",
+        "subscribers": 1640000,
+        "totalViews": 91715386,
+        "totalVideos": 294,
+        "avgViewsPerVideo": 311957,
+        "subsPerVideo": 5578,
+        "channelAgeYears": 13.1
+      },
+      {
+        "name": "Elizabeth Filips",
+        "handle": "@elizabethfilips",
+        "subscribers": 985000,
+        "totalViews": 46693184,
+        "totalVideos": 135,
+        "avgViewsPerVideo": 345875,
+        "subsPerVideo": 7296,
+        "channelAgeYears": 5.3
+      },
+      {
+        "name": "Captain Sinbad",
+        "handle": "@CaptainSinbad",
+        "subscribers": 560000,
+        "totalViews": 63722538,
+        "totalVideos": 427,
+        "avgViewsPerVideo": 149233,
+        "subsPerVideo": 1311,
+        "channelAgeYears": 7.9
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "Speaking 5+ Languages with my Polyglot Grandma (Part I)",
+        "channelName": "Nathaniel Drew",
+        "channelHandle": "@NathanielDrew",
+        "views": 11722921,
+        "normalizedViews": 6.549,
+        "likes": 686651,
+        "comments": 33926,
+        "durationSec": 884,
+        "publishedAt": "2020-01-19T14:00:01Z"
+      },
+      {
+        "title": "I Built a Transparent Katana",
+        "channelName": "Mike Shake",
+        "channelHandle": "@MikeShake",
+        "views": 25752917,
+        "normalizedViews": 5.365,
+        "likes": 382234,
+        "comments": 12280,
+        "durationSec": 1322,
+        "publishedAt": "2024-04-10T17:59:52Z"
+      },
+      {
+        "title": "How I Consistently Study with a Full Time Job: My Scheduling Formula",
+        "channelName": "Elizabeth Filips",
+        "channelHandle": "@elizabethfilips",
+        "views": 4358468,
+        "normalizedViews": 4.425,
+        "likes": 136080,
+        "comments": 2375,
+        "durationSec": 855,
+        "publishedAt": "2022-05-17T09:15:57Z"
+      },
+      {
+        "title": "You're Not Forgetful: My System for Memorising Everything",
+        "channelName": "Elizabeth Filips",
+        "channelHandle": "@elizabethfilips",
+        "views": 3973666,
+        "normalizedViews": 4.034,
+        "likes": 180071,
+        "comments": 3180,
+        "durationSec": 1094,
+        "publishedAt": "2023-08-13T13:53:51Z"
+      },
+      {
+        "title": "I Learned 92 Skills in 2 Years, Can I Still Do Them?",
+        "channelName": "Mike Shake",
+        "channelHandle": "@MikeShake",
+        "views": 17903543,
+        "normalizedViews": 3.73,
+        "likes": 389416,
+        "comments": 4339,
+        "durationSec": 538,
+        "publishedAt": "2022-02-21T15:05:21Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 225450,
+      "fastestGrower": {
+        "name": "Mike Shake",
+        "subsPerYear": 597718,
+        "ageYears": 8
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Mike Shake",
+        "subsPerVideo": 35036
+      },
+      "channelGrowth": [
+        {
+          "name": "Mike Shake",
+          "handle": "@MikeShake",
+          "subscribers": 4800000,
+          "ageYears": 8.03054953481887,
+          "subsPerYear": 597718,
+          "subsPerVideo": 35036
+        },
+        {
+          "name": "Matt D'Avella",
+          "handle": "@mattdavella",
+          "subscribers": 4020000,
+          "ageYears": 14.626907306005526,
+          "subsPerYear": 274836,
+          "subsPerVideo": 8645
+        },
+        {
+          "name": "Elizabeth Filips",
+          "handle": "@elizabethfilips",
+          "subscribers": 985000,
+          "ageYears": 5.320742191167896,
+          "subsPerYear": 185125,
+          "subsPerVideo": 7296
+        },
+        {
+          "name": "Nathaniel Drew",
+          "handle": "@NathanielDrew",
+          "subscribers": 1790000,
+          "ageYears": 10.639230328035085,
+          "subsPerYear": 168245,
+          "subsPerVideo": 8606
+        },
+        {
+          "name": "Thomas Frank",
+          "handle": "@Thomasfrank",
+          "subscribers": 3010000,
+          "ageYears": 19.26901209217431,
+          "subsPerYear": 156209,
+          "subsPerVideo": 10712
+        },
+        {
+          "name": "Jeff Su",
+          "handle": "@jeffsu",
+          "subscribers": 1640000,
+          "ageYears": 13.114416685679519,
+          "subsPerYear": 125053,
+          "subsPerVideo": 5578
+        },
+        {
+          "name": "Captain Sinbad",
+          "handle": "@CaptainSinbad",
+          "subscribers": 560000,
+          "ageYears": 7.890999283849215,
+          "subsPerYear": 70967,
+          "subsPerVideo": 1311
+        }
+      ]
+    }
+  },
+  "health": {
+    "overview": {
+      "channelCount": 3,
+      "totalVideosAnalyzed": 232,
+      "averageChannelAgeYears": 7.2,
+      "averageSubscribers": 5160228,
+      "medianSubscribers": 7240000,
+      "totalSubscribersAcrossNiche": 15480685
+    },
+    "optimalLength": {
+      "bestBucket": "30-60 min",
+      "bestNormalizedViews": 1.128,
+      "allBuckets": [
+        {
+          "bucket": "30-60 min",
+          "videoCount": 2,
+          "medianViews": 9298632,
+          "avgNormalizedViews": 1.128
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 11,
+          "medianViews": 145667,
+          "avgNormalizedViews": 0.969
+        },
+        {
+          "bucket": "3-5 min",
+          "videoCount": 5,
+          "medianViews": 16312,
+          "avgNormalizedViews": 0.538
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 40,
+          "medianViews": 152623,
+          "avgNormalizedViews": 0.198
+        },
+        {
+          "bucket": "10-15 min",
+          "videoCount": 117,
+          "medianViews": 78470,
+          "avgNormalizedViews": 0.188
+        },
+        {
+          "bucket": "20-30 min",
+          "videoCount": 20,
+          "medianViews": 181320,
+          "avgNormalizedViews": 0.134
+        },
+        {
+          "bucket": "5-10 min",
+          "videoCount": 37,
+          "medianViews": 21980,
+          "avgNormalizedViews": 0.091
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 3,
+        "medianViews": 3299032,
+        "avgNormalizedViews": 1.426,
+        "percentOfVideos": 1.3
+      },
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 1,
+        "medianViews": 7170028,
+        "avgNormalizedViews": 0.87,
+        "percentOfVideos": 0.4
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 5,
+        "medianViews": 5391763,
+        "avgNormalizedViews": 0.749,
+        "percentOfVideos": 2.2
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 12,
+        "medianViews": 6362517,
+        "avgNormalizedViews": 0.735,
+        "percentOfVideos": 5.2
+      },
+      {
+        "pattern": "Guide/Explainer",
+        "videoCount": 8,
+        "medianViews": 3214905,
+        "avgNormalizedViews": 0.613,
+        "percentOfVideos": 3.4
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 12,
+        "medianViews": 3716260,
+        "avgNormalizedViews": 0.503,
+        "percentOfVideos": 5.2
+      },
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 2,
+        "medianViews": 3950897,
+        "avgNormalizedViews": 0.479,
+        "percentOfVideos": 0.9
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 122,
+        "medianViews": 53244,
+        "avgNormalizedViews": 0.159,
+        "percentOfVideos": 52.6
+      },
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 14,
+        "medianViews": 97472,
+        "avgNormalizedViews": 0.117,
+        "percentOfVideos": 6
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 1,
+        "medianViews": 749093,
+        "avgNormalizedViews": 0.091,
+        "percentOfVideos": 0.4
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 59,
+        "medianViews": 33216,
+        "avgNormalizedViews": 0.086,
+        "percentOfVideos": 25.4
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 11.06,
+      "medianUploadsPerMonth": 1.25,
+      "frequencyGrowthCorrelation": "positive",
+      "channelBreakdown": [
+        {
+          "name": "Jeff Nippard",
+          "uploadsPerMonth": 1.25
+        },
+        {
+          "name": "Dr. Berg - официальный русскоязычный канал",
+          "uploadsPerMonth": 30.98
+        },
+        {
+          "name": "Sam Sulek",
+          "uploadsPerMonth": 0.95
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.05158,
+      "avgCommentRatio": 0.00255,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "1.31x",
+      "commentRatioVsGlobal": "0.95x"
+    },
+    "topChannels": [
+      {
+        "name": "Jeff Nippard",
+        "handle": "@JeffNippard",
+        "subscribers": 8240000,
+        "totalViews": 1920208430,
+        "totalVideos": 617,
+        "avgViewsPerVideo": 3112169,
+        "subsPerVideo": 13355,
+        "channelAgeYears": 11.9
+      },
+      {
+        "name": "Dr. Berg - официальный русскоязычный канал",
+        "handle": "@drericberg",
+        "subscribers": 7240000,
+        "totalViews": 1314418790,
+        "totalVideos": 2485,
+        "avgViewsPerVideo": 528941,
+        "subsPerVideo": 2913,
+        "channelAgeYears": 6.9
+      },
+      {
+        "name": "Sam Sulek",
+        "handle": "@SamSulek",
+        "subscribers": 685,
+        "totalViews": 215835,
+        "totalVideos": 108,
+        "avgViewsPerVideo": 1998,
+        "subsPerVideo": 6,
+        "channelAgeYears": 2.7
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "Unleashing Back Pump Power Achieving the Ultimate Lat Spread",
+        "channelName": "Sam Sulek",
+        "channelHandle": "@SamSulek",
+        "views": 3654,
+        "normalizedViews": 5.334,
+        "likes": 16,
+        "comments": 1,
+        "durationSec": 98,
+        "publishedAt": "2023-07-07T21:53:06Z"
+      },
+      {
+        "title": "Science Lifter Vs World’s Strongest Pro",
+        "channelName": "Jeff Nippard",
+        "channelHandle": "@JeffNippard",
+        "views": 31884588,
+        "normalizedViews": 3.869,
+        "likes": 1291283,
+        "comments": 8087,
+        "durationSec": 155,
+        "publishedAt": "2025-06-02T14:03:14Z"
+      },
+      {
+        "title": "The Surprising Muscle Building Secret Revealed Heavy Weights or Light Weight Squeezes",
+        "channelName": "Sam Sulek",
+        "channelHandle": "@SamSulek",
+        "views": 1033,
+        "normalizedViews": 1.508,
+        "likes": 10,
+        "comments": 1,
+        "durationSec": 208,
+        "publishedAt": "2023-07-07T21:52:50Z"
+      },
+      {
+        "title": "What Every Body Fat % Actually Looks Like (50% to 5%)",
+        "channelName": "Jeff Nippard",
+        "channelHandle": "@JeffNippard",
+        "views": 11427236,
+        "normalizedViews": 1.387,
+        "likes": 326715,
+        "comments": 17369,
+        "durationSec": 2048,
+        "publishedAt": "2025-11-09T15:00:02Z"
+      },
+      {
+        "title": "Get Abs In 60 Days (Using Science)",
+        "channelName": "Jeff Nippard",
+        "channelHandle": "@JeffNippard",
+        "views": 10742856,
+        "normalizedViews": 1.304,
+        "likes": 317037,
+        "comments": 5151,
+        "durationSec": 570,
+        "publishedAt": "2024-01-15T16:30:16Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 581365,
+      "fastestGrower": {
+        "name": "Dr. Berg - официальный русскоязычный канал",
+        "subsPerYear": 1050858,
+        "ageYears": 6.9
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Jeff Nippard",
+        "subsPerVideo": 13355
+      },
+      "channelGrowth": [
+        {
+          "name": "Dr. Berg - официальный русскоязычный канал",
+          "handle": "@drericberg",
+          "subscribers": 7240000,
+          "ageYears": 6.889607194463458,
+          "subsPerYear": 1050858,
+          "subsPerVideo": 2913
+        },
+        {
+          "name": "Jeff Nippard",
+          "handle": "@JeffNippard",
+          "subscribers": 8240000,
+          "ageYears": 11.890660062869166,
+          "subsPerYear": 692981,
+          "subsPerVideo": 13355
+        },
+        {
+          "name": "Sam Sulek",
+          "handle": "@SamSulek",
+          "subscribers": 685,
+          "ageYears": 2.675336294268259,
+          "subsPerYear": 256,
+          "subsPerVideo": 6
+        }
+      ]
+    }
+  },
+  "education": {
+    "overview": {
+      "channelCount": 4,
+      "totalVideosAnalyzed": 443,
+      "averageChannelAgeYears": 14.9,
+      "averageSubscribers": 13645000,
+      "medianSubscribers": 13975000,
+      "totalSubscribersAcrossNiche": 54580000
+    },
+    "optimalLength": {
+      "bestBucket": "5-10 min",
+      "bestNormalizedViews": 0.866,
+      "allBuckets": [
+        {
+          "bucket": "5-10 min",
+          "videoCount": 36,
+          "medianViews": 1221233,
+          "avgNormalizedViews": 0.866
+        },
+        {
+          "bucket": "10-15 min",
+          "videoCount": 92,
+          "medianViews": 1493791,
+          "avgNormalizedViews": 0.759
+        },
+        {
+          "bucket": "20-30 min",
+          "videoCount": 93,
+          "medianViews": 6604012,
+          "avgNormalizedViews": 0.653
+        },
+        {
+          "bucket": "30-60 min",
+          "videoCount": 66,
+          "medianViews": 8464322,
+          "avgNormalizedViews": 0.643
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 82,
+          "medianViews": 2238260,
+          "avgNormalizedViews": 0.527
+        },
+        {
+          "bucket": "60+ min",
+          "videoCount": 3,
+          "medianViews": 3694217,
+          "avgNormalizedViews": 0.418
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 64,
+          "medianViews": 3044951,
+          "avgNormalizedViews": 0.319
+        },
+        {
+          "bucket": "3-5 min",
+          "videoCount": 7,
+          "medianViews": 360016,
+          "avgNormalizedViews": 0.175
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 17,
+        "medianViews": 4208577,
+        "avgNormalizedViews": 1.432,
+        "percentOfVideos": 3.8
+      },
+      {
+        "pattern": "Guide/Explainer",
+        "videoCount": 7,
+        "medianViews": 2897162,
+        "avgNormalizedViews": 0.753,
+        "percentOfVideos": 1.6
+      },
+      {
+        "pattern": "Why/Explanation",
+        "videoCount": 98,
+        "medianViews": 1966666,
+        "avgNormalizedViews": 0.644,
+        "percentOfVideos": 22.1
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 7,
+        "medianViews": 4528137,
+        "avgNormalizedViews": 0.589,
+        "percentOfVideos": 1.6
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 252,
+        "medianViews": 4261371,
+        "avgNormalizedViews": 0.585,
+        "percentOfVideos": 56.9
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 52,
+        "medianViews": 3880994,
+        "avgNormalizedViews": 0.507,
+        "percentOfVideos": 11.7
+      },
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 5,
+        "medianViews": 3742251,
+        "avgNormalizedViews": 0.481,
+        "percentOfVideos": 1.1
+      },
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 2,
+        "medianViews": 6473940,
+        "avgNormalizedViews": 0.473,
+        "percentOfVideos": 0.5
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 2,
+        "medianViews": 7783647,
+        "avgNormalizedViews": 0.41,
+        "percentOfVideos": 0.5
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 5,
+        "medianViews": 9205629,
+        "avgNormalizedViews": 0.363,
+        "percentOfVideos": 1.1
+      },
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 4,
+        "medianViews": 8158506,
+        "avgNormalizedViews": 0.362,
+        "percentOfVideos": 0.9
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 10,
+        "medianViews": 2158231,
+        "avgNormalizedViews": 0.283,
+        "percentOfVideos": 2.3
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 2.33,
+      "medianUploadsPerMonth": 2.35,
+      "frequencyGrowthCorrelation": "positive",
+      "channelBreakdown": [
+        {
+          "name": "Vsauce",
+          "uploadsPerMonth": 2.23
+        },
+        {
+          "name": "Veritasium",
+          "uploadsPerMonth": 2.47
+        },
+        {
+          "name": "Johnny Harris",
+          "uploadsPerMonth": 3.27
+        },
+        {
+          "name": "PolyMatter",
+          "uploadsPerMonth": 1.35
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.03151,
+      "avgCommentRatio": 0.00213,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "0.8x",
+      "commentRatioVsGlobal": "0.79x"
+    },
+    "topChannels": [
+      {
+        "name": "Vsauce",
+        "handle": "@Vsauce",
+        "subscribers": 24700000,
+        "totalViews": 6542235973,
+        "totalVideos": 637,
+        "avgViewsPerVideo": 10270386,
+        "subsPerVideo": 38776,
+        "channelAgeYears": 18.6
+      },
+      {
+        "name": "Veritasium",
+        "handle": "@veritasium",
+        "subscribers": 20400000,
+        "totalViews": 4090754636,
+        "totalVideos": 488,
+        "avgViewsPerVideo": 8382694,
+        "subsPerVideo": 41803,
+        "channelAgeYears": 15.6
+      },
+      {
+        "name": "Johnny Harris",
+        "handle": "@johnnyharris",
+        "subscribers": 7550000,
+        "totalViews": 1175167065,
+        "totalVideos": 522,
+        "avgViewsPerVideo": 2251278,
+        "subsPerVideo": 14464,
+        "channelAgeYears": 14.8
+      },
+      {
+        "name": "PolyMatter",
+        "handle": "@PolyMatter",
+        "subscribers": 1930000,
+        "totalViews": 237875111,
+        "totalVideos": 181,
+        "avgViewsPerVideo": 1314227,
+        "subsPerVideo": 10663,
+        "channelAgeYears": 10.7
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "Zimbabwe’s Currency Crisis: the worthless $100 trillion bill",
+        "channelName": "PolyMatter",
+        "channelHandle": "@PolyMatter",
+        "views": 7625471,
+        "normalizedViews": 3.951,
+        "likes": 149430,
+        "comments": 13786,
+        "durationSec": 688,
+        "publishedAt": "2019-10-11T15:00:00Z"
+      },
+      {
+        "title": "These are the asteroids to worry about",
+        "channelName": "Veritasium",
+        "channelHandle": "@veritasium",
+        "views": 80510135,
+        "normalizedViews": 3.947,
+        "likes": 658142,
+        "comments": 31546,
+        "durationSec": 1206,
+        "publishedAt": "2020-11-30T15:17:09Z"
+      },
+      {
+        "title": "I Built An Emordnilap Machine",
+        "channelName": "Vsauce",
+        "channelHandle": "@Vsauce",
+        "views": 80005632,
+        "normalizedViews": 3.239,
+        "likes": 4366593,
+        "comments": 40799,
+        "durationSec": 144,
+        "publishedAt": "2024-12-07T02:42:20Z"
+      },
+      {
+        "title": "Apple's Money Problem (& Why It Won't Buy Netflix)",
+        "channelName": "PolyMatter",
+        "channelHandle": "@PolyMatter",
+        "views": 5829480,
+        "normalizedViews": 3.02,
+        "likes": 129845,
+        "comments": 6176,
+        "durationSec": 484,
+        "publishedAt": "2018-02-23T16:00:26Z"
+      },
+      {
+        "title": "Why China Ended its One-Child Policy",
+        "channelName": "PolyMatter",
+        "channelHandle": "@PolyMatter",
+        "views": 5273166,
+        "normalizedViews": 2.732,
+        "likes": 100023,
+        "comments": 10139,
+        "durationSec": 695,
+        "publishedAt": "2018-10-05T15:00:02Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 830815,
+      "fastestGrower": {
+        "name": "Vsauce",
+        "subsPerYear": 1327081,
+        "ageYears": 18.6
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Veritasium",
+        "subsPerVideo": 41803
+      },
+      "channelGrowth": [
+        {
+          "name": "Vsauce",
+          "handle": "@Vsauce",
+          "subscribers": 24700000,
+          "ageYears": 18.61228315841509,
+          "subsPerYear": 1327081,
+          "subsPerVideo": 38776
+        },
+        {
+          "name": "Veritasium",
+          "handle": "@veritasium",
+          "subscribers": 20400000,
+          "ageYears": 15.637770869774634,
+          "subsPerYear": 1304534,
+          "subsPerVideo": 41803
+        },
+        {
+          "name": "Johnny Harris",
+          "handle": "@johnnyharris",
+          "subscribers": 7550000,
+          "ageYears": 14.756775388495956,
+          "subsPerYear": 511629,
+          "subsPerVideo": 14464
+        },
+        {
+          "name": "PolyMatter",
+          "handle": "@PolyMatter",
+          "subscribers": 1930000,
+          "ageYears": 10.721394973001749,
+          "subsPerYear": 180014,
+          "subsPerVideo": 10663
+        }
+      ]
+    }
+  },
+  "tech": {
+    "overview": {
+      "channelCount": 2,
+      "totalVideosAnalyzed": 300,
+      "averageChannelAgeYears": 17.6,
+      "averageSubscribers": 18800000,
+      "medianSubscribers": 18800000,
+      "totalSubscribersAcrossNiche": 37600000
+    },
+    "optimalLength": {
+      "bestBucket": "30-60 min",
+      "bestNormalizedViews": 0.452,
+      "allBuckets": [
+        {
+          "bucket": "30-60 min",
+          "videoCount": 8,
+          "medianViews": 5582811,
+          "avgNormalizedViews": 0.452
+        },
+        {
+          "bucket": "0-3 min (Short)",
+          "videoCount": 7,
+          "medianViews": 3650884,
+          "avgNormalizedViews": 0.345
+        },
+        {
+          "bucket": "10-15 min",
+          "videoCount": 107,
+          "medianViews": 3038445,
+          "avgNormalizedViews": 0.173
+        },
+        {
+          "bucket": "15-20 min",
+          "videoCount": 68,
+          "medianViews": 2255332,
+          "avgNormalizedViews": 0.168
+        },
+        {
+          "bucket": "5-10 min",
+          "videoCount": 36,
+          "medianViews": 3163012,
+          "avgNormalizedViews": 0.163
+        },
+        {
+          "bucket": "20-30 min",
+          "videoCount": 44,
+          "medianViews": 1697806,
+          "avgNormalizedViews": 0.144
+        },
+        {
+          "bucket": "60+ min",
+          "videoCount": 30,
+          "medianViews": 470427,
+          "avgNormalizedViews": 0.028
+        }
+      ]
+    },
+    "titlePatterns": [
+      {
+        "pattern": "Guide/Explainer",
+        "videoCount": 6,
+        "medianViews": 6096313,
+        "avgNormalizedViews": 0.391,
+        "percentOfVideos": 2
+      },
+      {
+        "pattern": "Review",
+        "videoCount": 38,
+        "medianViews": 4359191,
+        "avgNormalizedViews": 0.214,
+        "percentOfVideos": 12.7
+      },
+      {
+        "pattern": "Question",
+        "videoCount": 39,
+        "medianViews": 3735544,
+        "avgNormalizedViews": 0.192,
+        "percentOfVideos": 13
+      },
+      {
+        "pattern": "Emotional/Clickbait",
+        "videoCount": 5,
+        "medianViews": 3007557,
+        "avgNormalizedViews": 0.17,
+        "percentOfVideos": 1.7
+      },
+      {
+        "pattern": "Listicle/Number",
+        "videoCount": 8,
+        "medianViews": 2970594,
+        "avgNormalizedViews": 0.163,
+        "percentOfVideos": 2.7
+      },
+      {
+        "pattern": "Time Promise",
+        "videoCount": 4,
+        "medianViews": 1977578,
+        "avgNormalizedViews": 0.155,
+        "percentOfVideos": 1.3
+      },
+      {
+        "pattern": "Other",
+        "videoCount": 176,
+        "medianViews": 1868358,
+        "avgNormalizedViews": 0.153,
+        "percentOfVideos": 58.7
+      },
+      {
+        "pattern": "Challenge/Experiment",
+        "videoCount": 9,
+        "medianViews": 1647059,
+        "avgNormalizedViews": 0.141,
+        "percentOfVideos": 3
+      },
+      {
+        "pattern": "Why/Explanation",
+        "videoCount": 4,
+        "medianViews": 2676962,
+        "avgNormalizedViews": 0.126,
+        "percentOfVideos": 1.3
+      },
+      {
+        "pattern": "Comparison/Versus",
+        "videoCount": 9,
+        "medianViews": 2066027,
+        "avgNormalizedViews": 0.117,
+        "percentOfVideos": 3
+      },
+      {
+        "pattern": "Money/Financial",
+        "videoCount": 26,
+        "medianViews": 1435010,
+        "avgNormalizedViews": 0.098,
+        "percentOfVideos": 8.7
+      },
+      {
+        "pattern": "How To/Tutorial",
+        "videoCount": 1,
+        "medianViews": 1019022,
+        "avgNormalizedViews": 0.061,
+        "percentOfVideos": 0.3
+      },
+      {
+        "pattern": "Authority/Expert",
+        "videoCount": 1,
+        "medianViews": 944311,
+        "avgNormalizedViews": 0.056,
+        "percentOfVideos": 0.3
+      }
+    ],
+    "uploadFrequency": {
+      "avgUploadsPerMonth": 14.08,
+      "medianUploadsPerMonth": 14.08,
+      "frequencyGrowthCorrelation": "insufficient data",
+      "channelBreakdown": [
+        {
+          "name": "Marques Brownlee",
+          "uploadsPerMonth": 5.44
+        },
+        {
+          "name": "Linus Tech Tips",
+          "uploadsPerMonth": 22.71
+        }
+      ]
+    },
+    "engagement": {
+      "avgLikeRatio": 0.03222,
+      "avgCommentRatio": 0.0021,
+      "globalAvgLikeRatio": 0.03938,
+      "globalAvgCommentRatio": 0.00269,
+      "likeRatioVsGlobal": "0.82x",
+      "commentRatioVsGlobal": "0.78x"
+    },
+    "topChannels": [
+      {
+        "name": "Marques Brownlee",
+        "handle": "@mkbhd",
+        "subscribers": 20800000,
+        "totalViews": 5298179112,
+        "totalVideos": 1805,
+        "avgViewsPerVideo": 2935279,
+        "subsPerVideo": 11524,
+        "channelAgeYears": 18
+      },
+      {
+        "name": "Linus Tech Tips",
+        "handle": "@LinusTechTips",
+        "subscribers": 16800000,
+        "totalViews": 9378009123,
+        "totalVideos": 7671,
+        "avgViewsPerVideo": 1222528,
+        "subsPerVideo": 2190,
+        "channelAgeYears": 17.3
+      }
+    ],
+    "top5Videos": [
+      {
+        "title": "Using Apple Vision Pro: What It’s Actually Like!",
+        "channelName": "Marques Brownlee",
+        "channelHandle": "@mkbhd",
+        "views": 28313359,
+        "normalizedViews": 1.361,
+        "likes": 566701,
+        "comments": 32205,
+        "durationSec": 2239,
+        "publishedAt": "2024-01-31T14:52:28Z"
+      },
+      {
+        "title": "This TECH Knife is Insane!",
+        "channelName": "Marques Brownlee",
+        "channelHandle": "@mkbhd",
+        "views": 24531726,
+        "normalizedViews": 1.179,
+        "likes": 702758,
+        "comments": 21906,
+        "durationSec": 113,
+        "publishedAt": "2026-01-16T21:56:34Z"
+      },
+      {
+        "title": "Driving Tesla Cybertruck: Everything You Need to Know!",
+        "channelName": "Marques Brownlee",
+        "channelHandle": "@mkbhd",
+        "views": 21612261,
+        "normalizedViews": 1.039,
+        "likes": 440553,
+        "comments": 40342,
+        "durationSec": 2422,
+        "publishedAt": "2023-12-01T11:00:32Z"
+      },
+      {
+        "title": "iPhone 17/Pro/Air Impressions: Spot the Red Flags!",
+        "channelName": "Marques Brownlee",
+        "channelHandle": "@mkbhd",
+        "views": 14011195,
+        "normalizedViews": 0.674,
+        "likes": 339528,
+        "comments": 21524,
+        "durationSec": 890,
+        "publishedAt": "2025-09-10T08:04:59Z"
+      },
+      {
+        "title": "Samsung Galaxy S24 Ultra Review: Why Buy Anything Else?",
+        "channelName": "Marques Brownlee",
+        "channelHandle": "@mkbhd",
+        "views": 12864299,
+        "normalizedViews": 0.618,
+        "likes": 302731,
+        "comments": 21866,
+        "durationSec": 1110,
+        "publishedAt": "2024-01-26T21:45:43Z"
+      }
+    ],
+    "growth": {
+      "avgSubsPerYear": 1064604,
+      "fastestGrower": {
+        "name": "Marques Brownlee",
+        "subsPerYear": 1157517,
+        "ageYears": 18
+      },
+      "mostEfficientSubsPerVideo": {
+        "name": "Marques Brownlee",
+        "subsPerVideo": 11524
+      },
+      "channelGrowth": [
+        {
+          "name": "Marques Brownlee",
+          "handle": "@mkbhd",
+          "subscribers": 20800000,
+          "ageYears": 17.969492166704693,
+          "subsPerYear": 1157517,
+          "subsPerVideo": 11524
+        },
+        {
+          "name": "Linus Tech Tips",
+          "handle": "@LinusTechTips",
+          "subscribers": 16800000,
+          "ageYears": 17.289438613836285,
+          "subsPerYear": 971691,
+          "subsPerVideo": 2190
+        }
+      ]
+    }
+  }
+}
