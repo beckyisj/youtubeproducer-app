@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# AI crawlers welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
 Sitemap: https://youtubeproducer.app/sitemap.xml
