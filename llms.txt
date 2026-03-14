@@ -1,0 +1,50 @@
+# YouTube Producer
+
+> The producer's toolkit for YouTube. Free tools and data-driven articles for creators.
+
+YouTube Producer is a suite of free tools and guides built for YouTube creators, producers, editors, and solo creators. Built by Becky Isjwara.
+
+## Tools
+
+- [Podcast Packager](https://packager.youtubeproducer.app): Turn podcast episodes into YouTube-ready packages with titles, descriptions, and timestamps.
+- [Quote Carousel Generator](https://carousel.youtubeproducer.app): Create shareable quote carousels from video transcripts for Instagram and LinkedIn.
+- [Next Video](https://nextvideo.youtubeproducer.app): Find your next video idea backed by data from channels one step ahead of yours.
+- [Channel Audit](https://audit.youtubeproducer.app): Paste any YouTube channel and get a full data-backed analysis — performance tiers, title patterns, duration sweet spots, and AI recommendations.
+- [SponsorAlert](https://sponsoralert.youtubeproducer.app): Never miss a sponsorship opportunity. Track brands, scan for launch intel, and generate outreach emails timed to product cycles.
+
+## Guides
+
+- [How to Never Miss a YouTube Sponsorship Again](https://youtubeproducer.app/articles/never-miss-sponsorship): Brand outreach timing, cadence, and email strategy for creators.
+- [The Creator's Guide to Tracking Brand Product Launches](https://youtubeproducer.app/articles/track-brand-launches): Launch calendar, press events, and how to pitch before campaigns fill up.
+- [How to Write a YouTube Media Kit That Gets Replies](https://youtubeproducer.app/articles/youtube-media-kit): What to include, how to present stats, format options.
+- [How to Find Brand Partnership Contacts Without a Manager](https://youtubeproducer.app/articles/find-brand-contacts): LinkedIn, brand websites, agencies, and email patterns.
+- [How to Repurpose One YouTube Video Into 10 Pieces of Content](https://youtubeproducer.app/articles/repurpose-youtube-content): Short clips, carousels, newsletters, LinkedIn posts, and more.
+- [How to Research Your YouTube Niche Before Starting a Channel](https://youtubeproducer.app/articles/research-youtube-niche): Competitor analysis, gap-spotting, and niche sizing.
+- [How to Spy on Your YouTube Competitors (Ethically)](https://youtubeproducer.app/articles/spy-on-competitors): What to analyze, where to look, and the ethical line.
+- [5 YouTube Channel Metrics That Actually Matter](https://youtubeproducer.app/articles/youtube-metrics-that-matter): Median views, view-to-sub ratio, consistency, title patterns, duration.
+
+## Data Studies
+
+- [What YouTube Thumbnails Actually Get Clicks? (3,500-Thumbnail Study)](https://youtubeproducer.app/articles/thumbnail-study)
+- [When Should You Upload to YouTube? (3,500-Video Study)](https://youtubeproducer.app/articles/upload-timing-study)
+- [What Actually Drives YouTube Engagement? (3,500-Video Study)](https://youtubeproducer.app/articles/engagement-study)
+- [Does Video Length Actually Matter? (3,500-Video Analysis)](https://youtubeproducer.app/articles/video-length-study)
+- [How Fast Do YouTube Channels Actually Grow? (34-Channel Study)](https://youtubeproducer.app/articles/channel-growth-speed)
+- [What Title Formulas Actually Get Views? (3,500-Video Study)](https://youtubeproducer.app/articles/title-formulas-study)
+- [What Breakout YouTube Channels Do Differently (34-Channel Study)](https://youtubeproducer.app/articles/breakout-channels-study)
+
+## Niche Playbooks
+
+- [Self-Development](https://youtubeproducer.app/articles/niche-self-development)
+- [Business](https://youtubeproducer.app/articles/niche-business)
+- [Creator Economy](https://youtubeproducer.app/articles/niche-creator)
+- [Productivity](https://youtubeproducer.app/articles/niche-productivity)
+- [Health](https://youtubeproducer.app/articles/niche-health)
+- [Education](https://youtubeproducer.app/articles/niche-education)
+- [Tech](https://youtubeproducer.app/articles/niche-tech)
+
+## Contact
+
+- Website: https://beckyisj.com
+- Substack: https://beckyisj.substack.com
+- LinkedIn: https://linkedin.com/in/beckyisj
