@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles — YouTube Producer</title>
-  <meta name="description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy. From the team behind YouTube Producer.">
+  <meta name="description" content="Guides, data studies, and tools for YouTube creators. From the team behind YouTube Producer.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://youtubeproducer.app/articles">
   <meta property="og:title" content="Articles — YouTube Producer">
-  <meta property="og:description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy.">
+  <meta property="og:description" content="Guides, data studies, and tools for YouTube creators.">
   <meta property="og:url" content="https://youtubeproducer.app/articles">
   <meta property="og:image" content="https://youtubeproducer.app/og-image.png">
   <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
   <meta name="twitter:site" content="@beckyisj">
   <meta name="twitter:creator" content="@beckyisj">
   <meta name="twitter:title" content="Articles — YouTube Producer">
-  <meta name="twitter:description" content="Data-driven articles on YouTube thumbnails, titles, and channel strategy.">
+  <meta name="twitter:description" content="Guides, data studies, and tools for YouTube creators.">
   <meta name="twitter:image" content="https://youtubeproducer.app/og-image.png">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -162,11 +162,43 @@
     .footer-cta:hover { color: var(--accent); }
     .footer-tip { color: var(--text-muted); display: inline-flex; align-items: center; gap: 5px; }
     .footer-tip:hover { color: var(--text); }
+    /* Filter buttons */
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .filter-btn:hover {
+      border-color: var(--border-hover);
+      color: var(--text);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    .article-card.hidden {
+      display: none;
+    }
     @media (max-width: 700px) {
       .articles-grid { grid-template-columns: 1fr; }
       .hero-inner { padding: 40px 0 28px; }
       .hero-inner h1 { font-size: 1.6rem; }
       .article-card { padding: 20px; }
+      .filters { margin-top: 16px; }
       footer { padding: 32px 0; }
       .footer-links { gap: 12px 20px; }
     }
@@ -178,7 +210,15 @@
       <div class="hero-inner">
         <a href="/" class="back">&larr; YouTube Producer</a>
         <h1>Articles</h1>
-        <p>Data-driven insights on YouTube thumbnails, titles, and channel strategy.</p>
+        <p>Guides, data studies, and tools for YouTube creators.</p>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Data Piece">Data</button>
+          <button class="filter-btn" data-filter="Niche Playbook">Playbooks</button>
+          <button class="filter-btn" data-filter="Tool Guide">Tool Guides</button>
+          <button class="filter-btn" data-filter="Guide">Guides</button>
+          <button class="filter-btn" data-filter="Interactive Tool">Interactive</button>
+        </div>
       </div>
     </div>
   </div>
@@ -187,7 +227,7 @@
     <div class="articles-grid">
 
       <!-- Interactive Tools -->
-      <a href="/articles/title-scorer" class="article-card">
+      <a href="/articles/title-scorer" class="article-card" data-category="Interactive Tool">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Interactive Tool</span>
         </div>
@@ -196,7 +236,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/video-length-calculator" class="article-card">
+      <a href="/articles/video-length-calculator" class="article-card" data-category="Interactive Tool">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Interactive Tool</span>
         </div>
@@ -206,7 +246,7 @@
       </a>
 
       <!-- Data Studies -->
-      <a href="/articles/thumbnail-study" class="article-card">
+      <a href="/articles/thumbnail-study" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -215,7 +255,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/upload-timing-study" class="article-card">
+      <a href="/articles/upload-timing-study" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -224,7 +264,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/engagement-study" class="article-card">
+      <a href="/articles/engagement-study" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -233,7 +273,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/video-length-study" class="article-card">
+      <a href="/articles/video-length-study" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -242,7 +282,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/channel-growth-speed" class="article-card">
+      <a href="/articles/channel-growth-speed" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -251,7 +291,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/title-formulas-study" class="article-card">
+      <a href="/articles/title-formulas-study" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -260,7 +300,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/breakout-channels-study" class="article-card">
+      <a href="/articles/breakout-channels-study" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -270,7 +310,7 @@
       </a>
 
       <!-- Niche Playbooks -->
-      <a href="/articles/niche-self-development" class="article-card">
+      <a href="/articles/niche-self-development" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -279,7 +319,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/niche-business" class="article-card">
+      <a href="/articles/niche-business" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -288,7 +328,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/niche-creator" class="article-card">
+      <a href="/articles/niche-creator" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -297,7 +337,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/niche-productivity" class="article-card">
+      <a href="/articles/niche-productivity" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -306,7 +346,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/niche-health" class="article-card">
+      <a href="/articles/niche-health" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -315,7 +355,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/niche-education" class="article-card">
+      <a href="/articles/niche-education" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -324,7 +364,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/niche-tech" class="article-card">
+      <a href="/articles/niche-tech" class="article-card" data-category="Niche Playbook">
         <div class="article-card-header">
           <span class="article-badge badge-data">Niche Playbook</span>
         </div>
@@ -334,7 +374,7 @@
       </a>
 
       <!-- Channel Analysis -->
-      <a href="/articles/daniel-pink-analysis" class="article-card">
+      <a href="/articles/daniel-pink-analysis" class="article-card" data-category="Data Piece">
         <div class="article-card-header">
           <span class="article-badge badge-data">Data Piece</span>
         </div>
@@ -343,7 +383,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/package-podcast" class="article-card">
+      <a href="/articles/package-podcast" class="article-card" data-category="Tool Guide">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Tool Guide</span>
         </div>
@@ -352,7 +392,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/read-channel-audit" class="article-card">
+      <a href="/articles/read-channel-audit" class="article-card" data-category="Tool Guide">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Tool Guide</span>
         </div>
@@ -361,7 +401,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/steal-video-ideas" class="article-card">
+      <a href="/articles/steal-video-ideas" class="article-card" data-category="Tool Guide">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Tool Guide</span>
         </div>
@@ -370,7 +410,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/quote-carousel-guide" class="article-card">
+      <a href="/articles/quote-carousel-guide" class="article-card" data-category="Tool Guide">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Tool Guide</span>
         </div>
@@ -379,7 +419,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/never-miss-sponsorship" class="article-card">
+      <a href="/articles/never-miss-sponsorship" class="article-card" data-category="Tool Guide">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Tool Guide</span>
         </div>
@@ -388,7 +428,7 @@
         <span class="article-card-arrow">&rarr;</span>
       </a>
 
-      <a href="/articles/track-brand-launches" class="article-card">
+      <a href="/articles/track-brand-launches" class="article-card" data-category="Guide">
         <div class="article-card-header">
           <span class="article-badge badge-guide">Guide</span>
         </div>
@@ -419,5 +459,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.article-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
