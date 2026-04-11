@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1920px;
+    background: linear-gradient(160deg, #fafaf9 0%, #f0efed 100%);
+    font-family: 'Manrope', -apple-system, sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Top accent bar */
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+  }
+
+  /* Subtle glow */
+  .glow {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(13, 148, 136, 0.05) 0%, transparent 70%);
+  }
+
+  /* Main content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 56px;
+    position: relative;
+    z-index: 1;
+    height: 1920px;
+  }
+
+  /* Logo */
+  .logo-icon {
+    width: 88px;
+    height: 88px;
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  .logo-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-name {
+    font-size: 44px;
+    font-weight: 600;
+    color: #1c1917;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+  }
+
+  .divider {
+    width: 140px;
+    height: 3px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 92px;
+    font-weight: 800;
+    color: #1c1917;
+    text-align: center;
+    line-height: 1.06;
+    letter-spacing: -4px;
+    margin-bottom: 24px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    color: #78716c;
+    text-align: center;
+    line-height: 1.45;
+    margin-bottom: 48px;
+  }
+
+  /* Tool cards */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 44px;
+    align-items: center;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid #e7e5e4;
+    border-radius: 28px;
+    padding: 44px 56px 44px 48px;
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #0d9488, #14b8a6);
+  }
+
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(13, 148, 136, 0.08);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    flex-shrink: 0;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .card-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1c1917;
+    letter-spacing: -0.5px;
+  }
+
+  .card-desc {
+    font-size: 28px;
+    font-weight: 400;
+    color: #78716c;
+  }
+
+  /* CTA */
+  .cta {
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    border-radius: 44px;
+    padding: 28px 88px;
+    margin-bottom: 18px;
+  }
+  .cta-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.3px;
+  }
+
+  .hint {
+    font-size: 22px;
+    font-weight: 400;
+    color: #a8a29e;
+  }
+
+  /* Bottom accent bar */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar"></div>
+  <div class="glow"></div>
+  <div class="content">
+    <div class="logo-icon">
+      <svg viewBox="0 0 32 32" fill="none">
+        <path d="M11.7 9.2 L11.7 22.8 L22.2 16 Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="brand-name">YouTube Producer</div>
+    <div class="divider"></div>
+    <div class="title">The Producer's<br>Toolkit for<br>YouTube</div>
+    <div class="subtitle">Built for producers, editors,<br>and solo creators.</div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🎙️</div>
+        <div class="card-text">
+          <div class="card-title">Podcast Packager</div>
+          <div class="card-desc">Titles, thumbnails & descriptions</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💬</div>
+        <div class="card-text">
+          <div class="card-title">Quote Carousel</div>
+          <div class="card-desc">Turn quotes into social carousels</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔥</div>
+        <div class="card-text">
+          <div class="card-title">Popular This Year</div>
+          <div class="card-desc">Any channel's top videos this year</div>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <div class="cta-text">youtubeproducer.app</div>
+    </div>
+    <div class="hint">Tap the link to try it</div>
+  </div>
+  <div class="bottom-bar"></div>
+</body>
+</html>

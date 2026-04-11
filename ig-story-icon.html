@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1920px;
+    background: linear-gradient(160deg, #fafaf9 0%, #f0efed 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+  }
+
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+  }
+
+  .glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(ellipse, rgba(13, 148, 136, 0.07) 0%, transparent 70%);
+  }
+
+  .icon {
+    width: 420px;
+    height: 420px;
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 30px 80px rgba(13, 148, 136, 0.25), 0 12px 32px rgba(13, 148, 136, 0.12);
+    position: relative;
+    z-index: 1;
+  }
+
+  .icon svg {
+    width: 280px;
+    height: 280px;
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar"></div>
+  <div class="glow"></div>
+  <div class="icon">
+    <svg viewBox="0 0 32 32" fill="none">
+      <path d="M11.7 9.2 L11.7 22.8 L22.2 16 Z" fill="white"/>
+    </svg>
+  </div>
+  <div class="bottom-bar"></div>
+</body>
+</html>
