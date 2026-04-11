@@ -1,5 +1,10 @@
 // Collect missing/replacement channels
-const API_KEY = 'REDACTED_GOOGLE_API_KEY';
+// Usage: YOUTUBE_API_KEY=... node collect-extra.js
+const API_KEY = process.env.YOUTUBE_API_KEY;
+if (!API_KEY) {
+  console.error('Set YOUTUBE_API_KEY env var before running this script.');
+  process.exit(1);
+}
 const fs = require('fs');
 const path = require('path');
 

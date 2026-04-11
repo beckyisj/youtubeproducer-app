@@ -1,7 +1,11 @@
 // Collects YouTube channel + video data for cross-channel analysis
-// Usage: node collect-data.js
+// Usage: YOUTUBE_API_KEY=... node collect-data.js
 
-const API_KEY = 'REDACTED_GOOGLE_API_KEY';
+const API_KEY = process.env.YOUTUBE_API_KEY;
+if (!API_KEY) {
+  console.error('Set YOUTUBE_API_KEY env var before running this script.');
+  process.exit(1);
+}
 const fs = require('fs');
 const path = require('path');
 
