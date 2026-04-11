@@ -34,9 +34,21 @@
   <div class="container">
     <a href="/" class="back">← YouTube Producer</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 3, 2026</p>
+    <p class="updated">Last updated: April 11, 2026</p>
 
-    <p>This privacy policy covers all tools and extensions built by YouTube Producer (<a href="https://youtubeproducer.app">youtubeproducer.app</a>), including Podcast Packager, Quote Carousel Generator, Thumbnail Generator, Channel Audit, Next Video, and the YT Carousel Frame Capture Chrome extension.</p>
+    <p>This privacy policy covers all tools and extensions built by YouTube Producer (<a href="https://youtubeproducer.app">youtubeproducer.app</a>), including Podcast Packager, Quote Carousel Generator, Thumbnail Generator, Channel Audit, Next Video, the YT Carousel Frame Capture Chrome extension, and the Plain Text Formatter for Frame.io Chrome extension.</p>
+
+    <h2>Plain Text Formatter for Frame.io (Chrome extension)</h2>
+    <p><strong>This extension collects zero data.</strong> It adds four formatting buttons (Bold, Italic, Strikethrough, Underline) to Frame.io's comment toolbar. When you select text and click a button, the extension converts the selection into Unicode characters (like 𝐛𝐨𝐥𝐝 or 𝘪𝘵𝘢𝘭𝘪𝘤) and replaces the selection with the converted text. Everything happens locally in your browser.</p>
+    <p>Specifically, this extension:</p>
+    <ul>
+      <li>Does <strong>not</strong> make any network requests</li>
+      <li>Does <strong>not</strong> collect personally identifiable information, health information, financial information, authentication information, personal communications, location, web history, user activity, or website content</li>
+      <li>Does <strong>not</strong> use any storage (no cookies, no localStorage, no IndexedDB, no background worker state)</li>
+      <li>Does <strong>not</strong> integrate with any third-party service, SDK, or analytics provider</li>
+      <li>Does <strong>not</strong> transmit anything anywhere</li>
+    </ul>
+    <p>The extension requests <code>content_scripts</code> matching <code>https://*.frame.io/*</code>. This host permission is required for Chrome to let the extension inject its four buttons into Frame.io's comment toolbar and read/write the currently selected text inside comment inputs on that site. It does not grant the ability to read or transmit data from any other domain, and the extension does not read or transmit anything from frame.io either. The source code is open and auditable at <a href="https://github.com/beckyisj/frameio-plain-text-formatter">github.com/beckyisj/frameio-plain-text-formatter</a>.</p>
 
     <h2>What we collect</h2>
     <ul>
