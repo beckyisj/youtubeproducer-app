@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Vercel
+.vercel
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Env
+.env
+.env.local
+.env.*.local
