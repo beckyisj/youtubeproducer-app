@@ -1,3 +1,16 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/dashboard", "destination": "https://yt-admin-becky.vercel.app/dashboard" },
+    { "source": "/dashboard/:path*", "destination": "https://yt-admin-becky.vercel.app/dashboard/:path*" },
+    { "source": "/login", "destination": "https://yt-admin-becky.vercel.app/login" },
+    { "source": "/api/auth/:path*", "destination": "https://yt-admin-becky.vercel.app/api/auth/:path*" },
+    { "source": "/_next/:path*", "destination": "https://yt-admin-becky.vercel.app/_next/:path*" }
+  ],
+  "crons": [
+    {
+      "path": "/api/expire-freemonths",
+      "schedule": "0 9 * * *"
+    }
+  ]
 }
