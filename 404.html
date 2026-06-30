@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — but here's a gift · YouTube Producer</title>
+  <meta name="description" content="You found a broken link. Here's a free month of YouTube Producer as a thank you.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75ZD55B9SQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-75ZD55B9SQ');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg:            #fafaf9;
+      --bg-surface:    #ffffff;
+      --bg-subtle:     #f5f5f4;
+      --border:        #e7e5e4;
+      --border-hover:  #d6d3d1;
+      --text:          #1c1917;
+      --text-secondary:#78716c;
+      --text-muted:    #a8a29e;
+      --accent:        #0d9488;
+      --accent-hover:  #0f766e;
+      --accent-soft:   rgba(13, 148, 136, 0.08);
+    }
+
+    body {
+      font-family: 'Manrope', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      background-image: linear-gradient(180deg, rgba(13, 148, 136, 0.07) 0%, transparent 420px);
+    }
+
+    .wrap { max-width: 620px; margin: 0 auto; padding: 64px 24px 96px; }
+
+    .back {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.9rem; color: var(--text-secondary);
+      text-decoration: none; margin-bottom: 40px;
+    }
+    .back:hover { color: var(--accent); }
+
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em;
+      color: var(--accent); background: var(--accent-soft);
+      padding: 6px 12px; border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    h1 .accent {
+      background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .lede {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .lede strong { color: var(--text); font-weight: 600; }
+
+    .ai-note {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .card .sub {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    form { display: grid; gap: 18px; }
+    .field { display: grid; gap: 6px; }
+    label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.01em;
+    }
+    label .opt { color: var(--text-muted); font-weight: 500; margin-left: 4px; }
+
+    input, textarea, select {
+      font-family: inherit;
+      font-size: 0.98rem;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      outline: none;
+      transition: border-color 120ms, box-shadow 120ms, background 120ms;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--accent);
+      background: #fff;
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+    textarea { resize: vertical; min-height: 80px; line-height: 1.5; }
+
+    .bonus {
+      position: relative;
+      padding: 14px 16px;
+      background: linear-gradient(135deg, rgba(13, 148, 136, 0.06), rgba(45, 212, 191, 0.05));
+      border: 1px dashed rgba(13, 148, 136, 0.35);
+      border-radius: 12px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .bonus strong { color: var(--accent); font-weight: 700; }
+
+    button {
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #0d9488, #14b8a6);
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      cursor: pointer;
+      transition: transform 120ms, box-shadow 120ms, opacity 120ms;
+      box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
+    }
+    button:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(13, 148, 136, 0.32); }
+    button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    .fine {
+      font-size: 0.78rem; color: var(--text-muted);
+      text-align: center; margin-top: 4px; line-height: 1.5;
+    }
+
+    .success {
+      text-align: center;
+      padding: 12px 4px;
+    }
+    .success .emoji { font-size: 2.5rem; margin-bottom: 12px; }
+    .success h2 { font-size: 1.25rem; margin-bottom: 8px; }
+    .success p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
+    .hidden { display: none; }
+
+    .error {
+      font-size: 0.88rem; color: #b91c1c; margin-top: 4px;
+    }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 40px 16px 80px; }
+      .card { padding: 24px; border-radius: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="/" class="back">← YouTube Producer</a>
+
+    <div class="badge">🎁 404 gift inside</div>
+    <h1>Oops — that link's broken.<br><span class="accent">Here's a month on us.</span></h1>
+    <p class="lede">You hit a page that doesn't exist. Sorry about that. As a thank-you for putting up with our mess, we'll give you <strong>one month of YouTube Producer Pro, free</strong> — for any tool you like.</p>
+    <p class="ai-note">Probably an AI sent you here. ChatGPT, Claude, and Gemini all love inventing URLs that look real. Tell us what you were looking for and we'll make it right.</p>
+
+    <div class="card">
+      <div id="form-wrap">
+        <h2>Claim your free month</h2>
+        <p class="sub">Activated instantly. We'll email you a magic sign-in link so you can start using Pro right away.</p>
+
+        <form id="claim-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span class="opt">(so we can assign the free month to your account)</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+
+          <div class="field">
+            <label for="use_case">What do you use YouTube Producer for?</label>
+            <textarea id="use_case" name="use_case" placeholder="e.g. I package podcast clips for a health channel, or I'm a solo creator figuring out titles…" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="source">How did you get to this broken link?</label>
+            <select id="source" name="source" required>
+              <option value="" disabled selected>Pick one…</option>
+              <option>ChatGPT sent me</option>
+              <option>Claude sent me</option>
+              <option>Gemini / Google AI sent me</option>
+              <option>Perplexity or another AI</option>
+              <option>Google search</option>
+              <option>A link from someone (Twitter, Slack, email, etc.)</option>
+              <option>Mistyped the URL</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="source_detail">If an AI sent you — what did you ask it? <span class="opt">(optional bonus)</span></label>
+            <textarea id="source_detail" name="source_detail" placeholder="The exact prompt or question helps us a lot."></textarea>
+          </div>
+
+          <div class="bonus">
+            <strong>Bonus gift:</strong> if you paste the prompt an AI used when it invented this URL, we'll stretch the free month to <strong>two months</strong>. Totally worth your 30 seconds.
+          </div>
+
+          <button type="submit" id="submit-btn">Claim my free month →</button>
+          <div class="fine">We'll email you from hello@youtubeproducer.app. No spam, ever.</div>
+          <div id="error" class="error" hidden></div>
+        </form>
+      </div>
+
+      <div id="success" class="success hidden">
+        <div class="emoji">🎁</div>
+        <h2>Done — your free month is active.</h2>
+        <p>Check your inbox: we just sent a magic sign-in link. Pro works across Channel Audit, Podcast Packager, and Quote Carousel. <br><br><a href="/" style="color:var(--accent);font-weight:600;text-decoration:none;">← Back to the tools</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('claim-form');
+    const btn = document.getElementById('submit-btn');
+    const err = document.getElementById('error');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      err.hidden = true;
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.path = location.pathname + location.search;
+      data.referrer = document.referrer || '(none)';
+      data.userAgent = navigator.userAgent;
+
+      try {
+        const res = await fetch('/api/claim-freemonth', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error('Request failed');
+        if (window.gtag) gtag('event', 'claim_freemonth', { source: data.source });
+        document.getElementById('form-wrap').classList.add('hidden');
+        document.getElementById('success').classList.remove('hidden');
+      } catch (e2) {
+        err.textContent = "Something broke on our end. Email hello@youtubeproducer.app and we'll sort it out.";
+        err.hidden = false;
+        btn.disabled = false;
+        btn.textContent = 'Claim my free month →';
+      }
+    });
+  </script>
+</body>
+</html>
